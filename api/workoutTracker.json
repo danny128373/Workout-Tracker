@@ -130,5 +130,196 @@
       "name": "Cable Decline Pullover",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591905467/3036_jtls9l.jpg"
     }
+  ],
+  "workoutLogs": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "Daniel",
+      "username": "dm3f90",
+      "password": "password",
+      "age": 30,
+      "height": "5'10\"",
+      "weight": 165
+    }
+  ],
+  "muscles": [
+    {
+      "id": 1,
+      "name": "Abs"
+    },
+    {
+      "id": 2,
+      "name": "Back"
+    },
+    {
+      "id": 3,
+      "name": "Biceps"
+    },
+    {
+      "id": 4,
+      "name": "Calves"
+    },
+    {
+      "id": 5,
+      "name": "Cardio"
+    },
+    {
+      "id": 6,
+      "name": "Chest"
+    },
+    {
+      "id": 7,
+      "name": "Forearms"
+    },
+    {
+      "id": 8,
+      "name": "Glutes"
+    },
+    {
+      "id": 9,
+      "name": "Shoulders"
+    },
+    {
+      "id": 10,
+      "name": "Triceps"
+    },
+    {
+      "id": 11,
+      "name": "Quads and Hamstrings"
+    }
+  ],
+  "sets": [],
+  "muscleExercises": [
+    {
+      "id": 1,
+      "exerciseId": 1,
+      "muscleId": 6
+    },
+    {
+      "id": 2,
+      "exerciseId": 2,
+      "muscleId": 6
+    },
+    {
+      "id": 3,
+      "exerciseId": 3,
+      "muscleId": 7
+    },
+    {
+      "id": 4,
+      "exerciseId": 4,
+      "muscleId": 7
+    },
+    {
+      "id": 5,
+      "exerciseId": 5,
+      "muscleId": 1
+    },
+    {
+      "id": 6,
+      "exerciseId": 6,
+      "muscleId": 1
+    },
+    {
+      "id": 7,
+      "exerciseId": 7,
+      "muscleId": 11
+    },
+    {
+      "id": 8,
+      "exerciseId": 8,
+      "muscleId": 11
+    },
+    {
+      "id": 9,
+      "exerciseId": 9,
+      "muscleId": 5
+    },
+    {
+      "id": 10,
+      "exerciseId": 10,
+      "muscleId": 5
+    },
+    {
+      "id": 11,
+      "exerciseId": 11,
+      "muscleId": 4
+    },
+    {
+      "id": 12,
+      "exerciseId": 12,
+      "muscleId": 4
+    },
+    {
+      "id": 13,
+      "exerciseId": 13,
+      "muscleId": 8
+    },
+    {
+      "id": 14,
+      "exerciseId": 14,
+      "muscleId": 8
+    },
+    {
+      "id": 15,
+      "exerciseId": 15,
+      "muscleId": 2
+    },
+    {
+      "id": 16,
+      "exerciseId": 16,
+      "muscleId": 2
+    },
+    {
+      "id": 17,
+      "exerciseId": 17,
+      "muscleId": 3
+    },
+    {
+      "id": 18,
+      "exerciseId": 18,
+      "muscleId": 3
+    },
+    {
+      "id": 19,
+      "exerciseId": 19,
+      "muscleId": 10
+    },
+    {
+      "id": 20,
+      "exerciseId": 20,
+      "muscleId": 10
+    },
+    {
+      "id": 21,
+      "exerciseId": 21,
+      "muscleId": 9
+    },
+    {
+      "id": 22,
+      "exerciseId": 22,
+      "muscleId": 9
+    },
+    {
+      "id": 23,
+      "exerciseId": 23,
+      "muscleId": 7
+    },
+    {
+      "id": 24,
+      "exerciseId": 24,
+      "muscleId": 7
+    },
+    {
+      "id": 25,
+      "exerciseId": 25,
+      "muscleId": 7
+    },
+    {
+      "id": 26,
+      "exerciseId": 26,
+      "muscleId": 7
+    }
   ]
 }

@@ -1,12 +1,38 @@
 import React, { useState, useEffect } from 'react'
+import Login from './auth/Login'
+import NavBar from './nav/NavBar'
+import ApplicationViews from './ApplicationViews'
 
-export default function WorkoutTracker() {
+export default function WorkoutTracker(props) {
 
+  const isAuthenticated = () => sessionStorage.getItem("credentials") !== null
+
+  const [hasUser, setHasUser] = useState(isAuthenticated())
+
+  useEffect(() => {
+    setHasUser(isAuthenticated());
+  }, [])
+
+  const setUser = (user) => {
+    sessionStorage.setItem("credentials", JSON.stringify(user))
+    setHasUser(isAuthenticated())
+  }
+
+  const clearUser = () => {
+    sessionStorage.clear();
+    setHasUser(isAuthenticated());
+  }
 
   return (
-    <div>
-      WorkoutTracker
-      <img alt="benchpress" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591902686/8_anojap.jpg" />
-    </div>
+    <>
+      {!hasUser
+        ? <Login setUser={setUser} {...props} />
+        : null}
+      {hasUser
+        ? <NavBar {...props} hasUser={hasUser} {...props} clearUser={clearUser} />
+        : null}
+      {hasUser ? <ApplicationViews />
+        : null}
+    </>
   )
 }
