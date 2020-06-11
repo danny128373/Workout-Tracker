@@ -29,7 +29,7 @@ export default function WorkoutTracker(props) {
         ? <Login setUser={setUser} {...props} />
         : null}
       {hasUser
-        ? <NavBar {...props} hasUser={hasUser} {...props} clearUser={clearUser} />
+        ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
         : null}
       {hasUser ? <ApplicationViews />
         : null}
