@@ -19,7 +19,7 @@ export default function NavBar(props) {
       </header>
       <nav>
         <ul className="container">
-          <li><Link to="/" className="nav-link">New Workout</Link></li>
+          <li><Link to="/newWorkout" className="nav-link">New Workout</Link></li>
           <li><Link to="/exercises" className="nav-link">Discover Exercises</Link></li>
           <li><Link to="/workoutLog" className="nav-link">Workout Logs</Link></li>
           <li><Link to="/profile" className="nav-link">Profile</Link></li>
