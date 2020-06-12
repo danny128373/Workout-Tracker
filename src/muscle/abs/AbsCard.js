@@ -12,7 +12,6 @@ export default function AbsCard(props) {
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}
-          <button type="button" onClick={() => props.deleteAbs(props.ab.id)}>Remove</button>
         </div>
       </div>
     </>
