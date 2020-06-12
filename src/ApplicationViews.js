@@ -7,6 +7,9 @@ import AbsList from './muscle/abs/AbsList'
 import BackList from './muscle/back/BackList'
 import BicepsList from './muscle/biceps/BicepsList'
 import CalvesList from './muscle/calves/CalvesList'
+import CardioList from './muscle/cardio/CardioList'
+import ChestList from './muscle/chest/ChestList'
+import ForearmsList from './muscle/forearms/ForearmsList'
 
 export default function ApplicationViews() {
   return (
@@ -31,6 +34,15 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/calves" render={(props) => {
         return <CalvesList {...props} />
+      }} />
+      <Route exact path="/cardio" render={(props) => {
+        return <CardioList {...props} />
+      }} />
+      <Route exact path="/chest" render={(props) => {
+        return <ChestList {...props} />
+      }} />
+      <Route exact path="/forearms" render={(props) => {
+        return <ForearmsList {...props} />
       }} />
     </>
   )
