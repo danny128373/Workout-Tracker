@@ -10,6 +10,10 @@ import CalvesList from './muscle/calves/CalvesList'
 import CardioList from './muscle/cardio/CardioList'
 import ChestList from './muscle/chest/ChestList'
 import ForearmsList from './muscle/forearms/ForearmsList'
+import GlutesList from './muscle/glutes/GlutesList'
+import ShouldersList from './muscle/shoulders/ShouldersList'
+import TricepsList from './muscle/triceps/TricepsList'
+import UpperLegsList from './muscle/upperlegs/UpperLegsList'
 
 export default function ApplicationViews() {
   return (
@@ -43,6 +47,18 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/forearms" render={(props) => {
         return <ForearmsList {...props} />
+      }} />
+      <Route exact path="/glutes" render={(props) => {
+        return <GlutesList {...props} />
+      }} />
+      <Route exact path="/shoulders" render={(props) => {
+        return <ShouldersList {...props} />
+      }} />
+      <Route exact path="/triceps" render={(props) => {
+        return <TricepsList {...props} />
+      }} />
+      <Route exact path="/upperlegs" render={(props) => {
+        return <UpperLegsList {...props} />
       }} />
     </>
   )
