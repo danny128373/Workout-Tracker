@@ -5,6 +5,7 @@ import Login from './auth/Login'
 import MuscleList from './muscle/MuscleList'
 import AbsList from './muscle/abs/AbsList'
 import BackList from './muscle/back/BackList'
+import BicepsList from './muscle/biceps/BicepsList'
 
 export default function ApplicationViews() {
   return (
@@ -23,6 +24,9 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/back" render={(props) => {
         return <BackList {...props} />
+      }} />
+      <Route exact path="/biceps" render={(props) => {
+        return <BicepsList {...props} />
       }} />
     </>
   )
