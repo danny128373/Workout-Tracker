@@ -8,7 +8,7 @@ export default function AbsCard(props) {
           <h3>Name: <span>
             {props.ab.exercise.name}
           </span></h3>
-          <img src={props.ab.exercise.url} />
+          <img alt="abs exercise" src={props.ab.exercise.url} />
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}
