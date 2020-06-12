@@ -6,6 +6,7 @@ import MuscleList from './muscle/MuscleList'
 import AbsList from './muscle/abs/AbsList'
 import BackList from './muscle/back/BackList'
 import BicepsList from './muscle/biceps/BicepsList'
+import CalvesList from './muscle/calves/CalvesList'
 
 export default function ApplicationViews() {
   return (
@@ -27,6 +28,9 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/biceps" render={(props) => {
         return <BicepsList {...props} />
+      }} />
+      <Route exact path="/calves" render={(props) => {
+        return <CalvesList {...props} />
       }} />
     </>
   )
