@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Login from './auth/Login'
 import NavBar from './nav/NavBar'
 import ApplicationViews from './ApplicationViews'
+import { withRouter } from 'react-router-dom'
 
-export default function WorkoutTracker(props) {
+const WorkoutTracker = (props) => {
 
   const isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
@@ -26,7 +27,7 @@ export default function WorkoutTracker(props) {
   return (
     <>
       {!hasUser
-        ? <Login setUser={setUser} {...props} />
+        ? <Login {...props} setUser={setUser} />
         : null}
       {hasUser
         ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
@@ -36,3 +37,5 @@ export default function WorkoutTracker(props) {
     </>
   )
 }
+
+export default withRouter(WorkoutTracker)
