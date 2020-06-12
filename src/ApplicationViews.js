@@ -14,6 +14,7 @@ import GlutesList from './muscle/glutes/GlutesList'
 import ShouldersList from './muscle/shoulders/ShouldersList'
 import TricepsList from './muscle/triceps/TricepsList'
 import UpperLegsList from './muscle/upperlegs/UpperLegsList'
+import Profile from './profile/Profile'
 
 export default function ApplicationViews() {
   return (
@@ -59,6 +60,9 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/upperlegs" render={(props) => {
         return <UpperLegsList {...props} />
+      }} />
+      <Route exact path="/profile" render={(props) => {
+        return <Profile {...props} />
       }} />
     </>
   )

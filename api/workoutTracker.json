@@ -140,7 +140,8 @@
       "password": "password",
       "age": 30,
       "height": "5'10\"",
-      "weight": 165
+      "weight": 165,
+      "url": ""
     }
   ],
   "muscles": [
