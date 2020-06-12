@@ -8,7 +8,7 @@ export default function CalvesCard(props) {
           <h3>Name: <span>
             {props.exercise.exercise.name}
           </span></h3>
-          <img src={props.exercise.exercise.url} />
+          <img alt="calves exercise" src={props.exercise.exercise.url} />
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}
