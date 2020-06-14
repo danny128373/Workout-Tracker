@@ -1,23 +1,36 @@
 import React, { useState } from 'react'
+import ApiManager from '../modules/ApiManager'
 
-export default function NewWorkout() {
+export default function NewWorkout(props) {
 
-  const [session, setSession] = useState({
-    muscles: "",
-    notes: "",
-  })
-
-  const handleSessionChange = (event) => setSession({
-    ...session,
-    [event.target.name]: [event.target.value],
-  })
-
-  const blankSet = { name: "", repetitions: "", weight: "" }
-
+  const blankSet = { name: "", reps: "", weight: "", workoutLogId: "" }
+  const [session, setSession] = useState({ muscles: "", notes: "" })
   const [set, setSet] = useState([{ ...blankSet }])
+
+  const handleSessionChange = (event) => {
+    setSession({ ...session, [event.target.name]: [event.target.value], })
+  }
 
   const addSet = () => {
     setSet([...set, { ...blankSet }])
+  }
+
+  const handleSetChange = (event) => {
+    const updatedSet = [...set]
+    updatedSet[event.target.dataset.idx][event.target.className] = event.target.value
+    setSet(updatedSet)
+  }
+
+  //post session first, an id will be generated,
+  //then assign that new id to set as a foreign key and 
+  //then post set
+  const onSubmitHandler = (event) => {
+    event.preventDefault()
+    ApiManager.post(session, 'workoutLogs')
+    set.map(exercise => {
+      ApiManager.post(exercise, "sets")
+    })
+    props.history.push("/workoutLogs")
   }
 
   return (
@@ -25,19 +38,14 @@ export default function NewWorkout() {
       <label htmlFor="session">Muscle(s)</label>
       <input
         type="text"
-        name="muscle"
-        id="muscle"
+        name="muscles"
+        id="muscles"
         value={session.muscles}
         onChange={handleSessionChange}
+        placeholder="Muscle(s) trained"
       />
-      <label htmlFor="notes">Notes</label>
-      <input
-        type="text"
-        name="notes"
-        id="notes"
-        value={session.muscles}
-        onChange={handleSessionChange}
-      />
+      <br />
+
       {/* <input type="text" name="exercise" id="exercise" placeholder="Exercise Name" />
       <input type="text" name="reps" id="reps" placeholder="Repetitions" />
       <input type="text" name="weight" id="weight" placeholder="Weight" /> */}
@@ -49,7 +57,7 @@ export default function NewWorkout() {
           const weightId = `weight-${idx}`;
           return (
             <div key={`set-${idx}`}>
-              <label htmlFor={setId}>{`set #${idx + 1}`}</label>
+              <label htmlFor={setId}>{`Set #${idx + 1}`}</label>
               <input
                 type="text"
                 name={setId}
@@ -57,7 +65,9 @@ export default function NewWorkout() {
                 id={setId}
                 className="name"
                 placeholder="Exercise Name"
+                onChange={handleSetChange}
               />
+              <br />
               <label htmlFor={repsId}>Reps</label>
               <input
                 type="text"
@@ -66,7 +76,10 @@ export default function NewWorkout() {
                 id={repsId}
                 className="reps"
                 placeholder="Repetitions"
+                onChange={handleSetChange}
+
               />
+              <br />
               <label htmlFor={weightId}>Weight</label>
               <input
                 type="text"
@@ -75,13 +88,26 @@ export default function NewWorkout() {
                 id={weightId}
                 className="weight"
                 placeholder="Weight"
+                onChange={handleSetChange}
               />
             </div>
           );
         })
       }
+      <br />
       <input type="button" value="Add New Set" onClick={addSet} />
-      <input type="submit" value="Submit Workout Log" />
+      <br />
+      <label htmlFor="notes">Notes</label>
+      <input
+        type="text"
+        name="notes"
+        id="notes"
+        value={session.notes}
+        onChange={handleSessionChange}
+        placeholder="Notes about your workout"
+      />
+      <br />
+      <input type="submit" onClick={onSubmitHandler} value="Submit Workout Log" />
     </form>
   )
 }
