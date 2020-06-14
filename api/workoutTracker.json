@@ -131,7 +131,14 @@
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591905467/3036_jtls9l.jpg"
     }
   ],
-  "workoutLogs": [],
+  "workoutLogs": [
+    {
+      "id": 1,
+      "date": "2020-05-18",
+      "userId": 1,
+      "notes": "Sick pump!"
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -190,7 +197,22 @@
       "name": "Quads and Hamstrings"
     }
   ],
-  "sets": [],
+  "sets": [
+    {
+      "id": 1,
+      "name": "Bench Press",
+      "reps": 8,
+      "weight": 135,
+      "workoutLogId": 1
+    },
+    {
+      "id": 2,
+      "name": "Incline Bench Press",
+      "reps": 10,
+      "weight": 115,
+      "workoutLogId": 1
+    }
+  ],
   "muscleExercises": [
     {
       "id": 1,

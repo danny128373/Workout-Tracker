@@ -22,7 +22,7 @@ const NavBar = (props) => {
         <ul className="container">
           <li><Link to="/newWorkout" className="nav-link">New Workout</Link></li>
           <li><Link to="/muscle" className="nav-link">Discover Exercises</Link></li>
-          <li><Link to="/workoutLog" className="nav-link">Workout Logs</Link></li>
+          <li><Link to="/workoutLogs" className="nav-link">Workout Logs</Link></li>
           <li><Link to="/profile" className="nav-link">Profile</Link></li>
           <li><Link to="/login" onClick={handleLogout}>Logout</Link></li>
         </ul>

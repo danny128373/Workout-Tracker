@@ -17,6 +17,7 @@ import UpperLegsList from './muscle/upperlegs/UpperLegsList'
 import Profile from './profile/Profile'
 
 export default function ApplicationViews() {
+
   return (
     <>
       <Route exact path="/newWorkout" render={(props) => {
