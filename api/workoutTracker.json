@@ -166,6 +166,16 @@
       ],
       "userId": 2,
       "id": 4
+    },
+    {
+      "muscles": [
+        "Calves"
+      ],
+      "notes": [
+        "Ate well that day and it shows!"
+      ],
+      "userId": 2,
+      "id": 5
     }
   ],
   "users": [
@@ -295,6 +305,22 @@
       "workoutLogId": 4,
       "userId": 2,
       "id": 8
+    },
+    {
+      "name": "Barbell Calf Raises",
+      "reps": "12",
+      "weight": "185",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "name": "Dumbbell Calf Raises",
+      "reps": "5",
+      "weight": "225",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 10
     }
   ],
   "muscleExercises": [
