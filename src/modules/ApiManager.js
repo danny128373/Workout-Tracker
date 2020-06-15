@@ -27,5 +27,8 @@ export default {
       },
       body: JSON.stringify(editedWorkout)
     }).then(data => data.json());
+  },
+  getAllWorkoutLogsWithUser(id, collection) {
+    return fetch(`${remoteURL}/${collection}?_expand=workoutLog&userId=${id}`).then(data => data.json())
   }
 }

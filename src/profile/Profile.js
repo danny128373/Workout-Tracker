@@ -30,6 +30,7 @@ export default function Profile(props) {
     const file = await res.json()
     setImage(file.secure_url)
     setIsLoading(false)
+    //file.url has link of profile pic
   }
 
   useEffect(getUser, [])

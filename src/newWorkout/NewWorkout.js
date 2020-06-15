@@ -4,7 +4,7 @@ import ApiManager from '../modules/ApiManager'
 export default function NewWorkout(props) {
 
   const [isShown, setIsShown] = useState(true)
-  const blankSet = { name: "", reps: "", weight: "", workoutLogId: "" }
+  const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
   const [session, setSession] = useState({ muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
 
