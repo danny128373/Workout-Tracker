@@ -30,6 +30,7 @@ export default function Profile(props) {
     const file = await res.json()
     setImage(file.secure_url)
     setIsLoading(false)
+    //file.url has link of profile pic
   }
 
   useEffect(getUser, [])
@@ -46,7 +47,7 @@ export default function Profile(props) {
       {isLoading ? (
         <h3>Loading...</h3>
       ) : (
-          <img src={image} />
+          <img alt="Profile" src={image} />
         )}
       <p>Name: {user.name}</p>
       <p>Age: {user.age}</p>

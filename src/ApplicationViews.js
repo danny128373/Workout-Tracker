@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Route } from 'react-router-dom'
 import NewWorkout from './newWorkout/NewWorkout'
 import Login from './auth/Login'
@@ -15,6 +15,7 @@ import ShouldersList from './muscle/shoulders/ShouldersList'
 import TricepsList from './muscle/triceps/TricepsList'
 import UpperLegsList from './muscle/upperlegs/UpperLegsList'
 import Profile from './profile/Profile'
+import WorkoutLogList from './workoutLog/WorkoutLogList'
 
 export default function ApplicationViews() {
 
@@ -64,6 +65,9 @@ export default function ApplicationViews() {
       }} />
       <Route exact path="/profile" render={(props) => {
         return <Profile {...props} />
+      }} />
+      <Route exact path="/workoutLogs" render={(props) => {
+        return <WorkoutLogList {...props} />
       }} />
     </>
   )

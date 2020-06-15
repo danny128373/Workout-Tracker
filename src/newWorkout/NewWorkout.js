@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import ApiManager from '../modules/ApiManager'
 
 export default function NewWorkout(props) {
 
   const [isShown, setIsShown] = useState(true)
-  const blankSet = { name: "", reps: "", weight: "", workoutLogId: "" }
-  const [session, setSession] = useState({ muscles: "", notes: "" })
+  const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
+  const [session, setSession] = useState({ muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
 
   const handleSessionChange = (event) => {
@@ -37,7 +37,6 @@ export default function NewWorkout(props) {
   }
 
   const addWorkoutHandler = (event) => {
-    ApiManager.post({ muscles: "", notes: "" }, 'workoutLogs')
     setIsShown(false)
   }
 

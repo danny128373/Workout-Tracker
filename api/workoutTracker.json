@@ -146,6 +146,36 @@
         "Hadn't eaten"
       ],
       "id": 2
+    },
+    {
+      "muscles": [
+        "Shoulders and Triceps"
+      ],
+      "notes": [
+        "Felt great!"
+      ],
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "muscles": [
+        "Back"
+      ],
+      "notes": [
+        "Back started hurting"
+      ],
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "muscles": [
+        "Calves"
+      ],
+      "notes": [
+        "Ate well that day and it shows!"
+      ],
+      "userId": 2,
+      "id": 5
     }
   ],
   "users": [
@@ -243,6 +273,54 @@
       "weight": "35",
       "workoutLogId": 2,
       "id": 4
+    },
+    {
+      "name": "Military Press",
+      "reps": "10",
+      "weight": "95",
+      "workoutLogId": 3,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "name": "Overhead Press",
+      "reps": "6",
+      "weight": "115",
+      "workoutLogId": 3,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "name": "Deadlifts",
+      "reps": "8",
+      "weight": "155",
+      "workoutLogId": 4,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "name": "Deadlifts",
+      "reps": "6",
+      "weight": "185",
+      "workoutLogId": 4,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "name": "Barbell Calf Raises",
+      "reps": "12",
+      "weight": "185",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "name": "Dumbbell Calf Raises",
+      "reps": "5",
+      "weight": "225",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 10
     }
   ],
   "muscleExercises": [
