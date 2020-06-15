@@ -9,7 +9,10 @@ export default function Profile(props) {
   const [isLoading, setIsLoading] = useState(false)
 
   const getUser = () => {
-    ApiManager.getUser(1).then(user => setUser(user))
+    const currentUser = JSON.parse(sessionStorage.getItem('credentials'))[0].id
+    ApiManager.getUser(currentUser).then(user => {
+      setUser(user)
+    })
   }
 
   const uploadImage = async event => {
