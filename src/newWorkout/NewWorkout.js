@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ApiManager from '../modules/ApiManager'
 
 export default function NewWorkout(props) {
@@ -18,12 +18,14 @@ export default function NewWorkout(props) {
   const handleSetChange = (event) => {
     const updatedSet = [...set]
     updatedSet[event.target.dataset.idx][event.target.className] = event.target.value
-    setSet(updatedSet)
+    ApiManager.getAll('workoutLogs').then(workouts => {
+      set.map(exercise => {
+        exercise.workoutLogId = workouts[workouts.length - 1].id + 1
+      })
+      setSet(updatedSet)
+    })
   }
 
-  //post session first, an id will be generated,
-  //then assign that new id to set as a foreign key and 
-  //then post set
   const onSubmitHandler = (event) => {
     event.preventDefault()
     ApiManager.post(session, 'workoutLogs')
@@ -33,8 +35,13 @@ export default function NewWorkout(props) {
     props.history.push("/workoutLogs")
   }
 
+  const addWorkoutHandler = (event) => {
+    ApiManager.post({ muscles: "", notes: "" }, 'workoutLogs')
+  }
+
   return (
     <form>
+      <button onClick={addWorkoutHandler}>Start New Workout</button>
       <label htmlFor="session">Muscle(s)</label>
       <input
         type="text"

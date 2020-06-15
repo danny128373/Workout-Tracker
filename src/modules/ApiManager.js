@@ -18,5 +18,14 @@ export default {
   },
   getAll(collection) {
     return fetch(`${remoteURL}/${collection}`).then(data => data.json())
+  },
+  update(editedWorkout, collection) {
+    return fetch(`${remoteURL}/${collection}/${editedWorkout.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedWorkout)
+    }).then(data => data.json());
   }
 }
