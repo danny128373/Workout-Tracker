@@ -7,13 +7,13 @@ export default {
   getUser(id) {
     return fetch(`${remoteURL}/users/${id}`).then(data => data.json())
   },
-  post(set, collection) {
+  post(item, collection) {
     return fetch(`${remoteURL}/${collection}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(set)
+      body: JSON.stringify(item)
     }).then(data => data.json())
   },
   getAll(collection) {

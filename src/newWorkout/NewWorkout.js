@@ -46,7 +46,6 @@ export default function NewWorkout(props) {
       {isShown ? <button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</button> : null}
       {!isShown ?
         <form>
-
           <label htmlFor="session">Muscle(s)</label>
           <input
             type="text"
