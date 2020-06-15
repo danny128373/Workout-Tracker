@@ -3,12 +3,15 @@ import Login from './auth/Login'
 import NavBar from './nav/NavBar'
 import ApplicationViews from './ApplicationViews'
 import { withRouter } from 'react-router-dom'
+import Register from './auth/Register'
 
 const WorkoutTracker = (props) => {
+
 
   const isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
   const [hasUser, setHasUser] = useState(isAuthenticated())
+  const [register, setRegister] = useState(false)
 
   useEffect(() => {
     setHasUser(isAuthenticated());
@@ -24,15 +27,27 @@ const WorkoutTracker = (props) => {
     setHasUser(isAuthenticated());
   }
 
+  const registerHandler = () => {
+    setRegister(true)
+  }
+
   return (
     <>
-      {!hasUser
-        ? <Login {...props} setUser={setUser} />
+      {!hasUser && !register
+        ?
+        <>
+          <Login {...props} setUser={setUser} />
+          <button onClick={registerHandler} >Register</button>
+        </>
         : null}
-      {hasUser
+      {!hasUser && register
+        ? <Register {...props} setUser={setUser} />
+        : null}
+      {hasUser && register
         ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
         : null}
-      {hasUser ? <ApplicationViews />
+      {hasUser
+        ? <ApplicationViews />
         : null}
     </>
   )
