@@ -46,7 +46,7 @@ export default function Profile(props) {
       {isLoading ? (
         <h3>Loading...</h3>
       ) : (
-          <img src={image} />
+          <img alt="Profile" src={image} />
         )}
       <p>Name: {user.name}</p>
       <p>Age: {user.age}</p>
