@@ -29,8 +29,8 @@ export default function Register(props) {
         <input onChange={handleFormChange} type="text" id="name" name="name" placeholder="Name" />
         <label htmlFor="userName">Username:</label>
         <input onChange={handleFormChange} type="text" id="username" name="username" placeholder="Username" />
-        <label htmlFor="Password">Name:</label>
-        <input onChange={handleFormChange} type="password" id="Password" name="Password" placeholder="Password" />
+        <label htmlFor="password">Name:</label>
+        <input onChange={handleFormChange} type="password" id="password" name="password" placeholder="Password" />
         <label htmlFor="age">Name:</label>
         <input onChange={handleFormChange} type="text" id="age" name="age" placeholder="Age" />
         <label htmlFor="height">Name:</label>
