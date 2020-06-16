@@ -7,6 +7,7 @@ export default function Profile(props) {
   const [user, setUser] = useState({ name: "", age: "", height: "", weight: "" })
   const [image, setImage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [isUploading, setIsUploading] = useState(false)
 
   const getUser = () => {
     const currentUser = JSON.parse(sessionStorage.getItem('credentials'))[0].id
@@ -29,8 +30,10 @@ export default function Profile(props) {
     )
     const file = await res.json()
     setImage(file.secure_url)
-    setIsLoading(false)
-
+    ApiManager.update({ ...user, url: file.url }, 'users').then(e => {
+      setIsLoading(false)
+      setIsUploading(true)
+    })
     //file.url has link of profile pic
   }
 
@@ -50,6 +53,10 @@ export default function Profile(props) {
       ) : (
           <img src={image} />
         )}
+
+      {!isUploading ?
+        < img src={user.url} />
+        : null}
       <p>Name: {user.name}</p>
       <p>Age: {user.age}</p>
       <p>Height: {user.height}</p>
