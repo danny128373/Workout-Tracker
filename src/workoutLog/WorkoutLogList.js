@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import ApiManager from '../modules/ApiManager'
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap'
 
 export default function WorkoutLogList(props) {
 
@@ -17,19 +21,25 @@ export default function WorkoutLogList(props) {
     <>
       {workouts.reverse().map(workout => {
         return (
-          <div key={workout.id}>
-            <h2>Muscle(s) Trained: {workout.muscles[0]}</h2>
-            {workout.sets.map(set => {
-              return (
-                <div key={set.id}>
-                  <p>Exercise Name: {set.name}</p>
-                  <p>Reps: {set.reps}</p>
-                  <p>Weight: {set.weight}</p>
-                </div>
-              )
-            })}
+          <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} key={workout.id}>
+            <CardBody>
+              <CardTitle>Muscle(s) Trained: {workout.muscles[0]}</CardTitle>
+              {workout.sets.map(set => {
+                return (
+                  <>
+                    <CardSubtitle key={set.id}>
+                      Exercise Name: {set.name}
+                    </CardSubtitle>
+                    <CardText>
+                      Reps: {set.reps}<br />
+                      Weight: {set.weight}
+                    </CardText>
+                  </>
+                )
+              })}
             Notes: {workout.notes[0]}
-          </div>
+            </CardBody>
+          </Card>
         )
       })}
     </>

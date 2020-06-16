@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ApiManager from '../modules/ApiManager'
+import { Button } from 'reactstrap'
 
 export default function NewWorkout(props) {
 
@@ -42,7 +43,7 @@ export default function NewWorkout(props) {
 
   return (
     <>
-      {isShown ? <button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</button> : null}
+      {isShown ? <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button> : null}
       {!isShown ?
         <form>
           <label htmlFor="session">Muscle(s)</label>
