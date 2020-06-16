@@ -197,6 +197,15 @@
       "height": "bb",
       "weight": "bb",
       "id": 2
+    },
+    {
+      "name": "Brandy",
+      "username": "brandy@gmail.com",
+      "password": "123",
+      "age": "30",
+      "height": "5'6\"",
+      "weight": "180",
+      "id": 3
     }
   ],
   "muscles": [

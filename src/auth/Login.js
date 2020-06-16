@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ApiManager from '../modules/ApiManager'
+import { Button } from 'reactstrap'
 
 export default function Login(props) {
 
@@ -44,20 +45,20 @@ export default function Login(props) {
         <h1 className="site-title">
           Workout Tracker
         <br />
-          <small>Does it really count if you don't log it?</small>
         </h1>
+        <h6>Does it really count if you don't log it?</h6>
       </header>
 
       <form onSubmit={onSubmitHandler}>
         <fieldset>
-          <label htmlFor="username">Username:</label>
+          <label className="login" htmlFor="username">Username:</label>
           <input type="text" onChange={handleFieldChange} id="username" placeholder="Enter username" />
         </fieldset>
         <fieldset>
-          <label htmlFor="password">Password:</label>
+          <label className="login" htmlFor="password">Password:</label>{' '}
           <input onChange={handleFieldChange} type="password" id="password" placeholder="Enter password" />
         </fieldset>
-        <button type="submit">Sign in</button>
+        <Button id="signInButton" type="submit">Sign in</Button>
       </form>
 
     </>

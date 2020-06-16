@@ -1,3 +1,13 @@
 .hidden {
   display: none;
 }
+
+.set {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+#setButton, #workoutButton {
+  background: darkred;
+}
