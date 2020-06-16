@@ -15,6 +15,11 @@ export default function WorkoutLogList(props) {
     })
   }
 
+  const dateFormatter = (date) => {
+    const newDate = date.substring(5, 7) + '/' + date.substring(date.length - 2, date.length) + '/' + date.substring(0, 4)
+    return newDate
+  }
+
   useEffect(getWorkoutLogs, [])
 
   return (
@@ -23,12 +28,13 @@ export default function WorkoutLogList(props) {
         return (
           <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} key={workout.id}>
             <CardBody>
+              <h3>{dateFormatter(workout.date)}</h3>
               <CardTitle>Muscle(s) Trained: {workout.muscles[0]}</CardTitle>
-              {workout.sets.map(set => {
+              {workout.sets.map((set, index) => {
                 return (
                   <>
                     <CardSubtitle key={set.id}>
-                      Exercise Name: {set.name}
+                      {`Set# ${index + 1} `}: {set.name}
                     </CardSubtitle>
                     <CardText>
                       Reps: {set.reps}<br />

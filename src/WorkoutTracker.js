@@ -45,7 +45,7 @@ const WorkoutTracker = (props) => {
         </>
         : null}
       {!hasUser && register
-        ? <Register {...props} setUser={setUser} />
+        ? <Register hasUser={hasUser} sethasUser={setHasUser} setHasRegister={setRegister} setUser={setUser} register={register} {...props} setUser={setUser} />
         : null}
       {hasUser
         ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />

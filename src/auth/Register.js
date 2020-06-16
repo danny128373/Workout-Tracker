@@ -19,8 +19,8 @@ export default function Register(props) {
     // } else {
     //   alert("Please complete all input fields")
     // }
-    props.setUser(user)
-    props.history.push('/newWorkout')
+    props.setHasRegister(false)
+    props.history.push('/')
   }
 
   return (

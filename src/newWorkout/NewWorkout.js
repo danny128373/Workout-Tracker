@@ -7,7 +7,7 @@ export default function NewWorkout(props) {
 
   const [isShown, setIsShown] = useState(true)
   const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
-  const [session, setSession] = useState({ muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
+  const [session, setSession] = useState({ date: "", muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
 
   const handleSessionChange = (event) => {
@@ -16,6 +16,10 @@ export default function NewWorkout(props) {
 
   const addSet = () => {
     setSet([...set, { ...blankSet }])
+  }
+
+  const handleDate = (event) => {
+    setSession({ ...session, date: event.target.value })
   }
 
   const handleSetChange = (event) => {
@@ -33,9 +37,10 @@ export default function NewWorkout(props) {
     event.preventDefault()
     ApiManager.post(session, 'workoutLogs')
     set.map(exercise => {
-      ApiManager.post(exercise, "sets")
+      ApiManager.post(exercise, "sets").then(e => {
+        props.history.push("/workoutLogs")
+      })
     })
-    props.history.push("/workoutLogs")
   }
 
   const addWorkoutHandler = (event) => {
@@ -47,7 +52,9 @@ export default function NewWorkout(props) {
       {isShown ? <div className="buttonContainer"><Button size="lg" id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button></div> : null}
       {!isShown ?
         <form>
-          <label htmlFor="session">Muscle(s)</label>
+          <label htmlFor="date">Date: </label>
+          <input onChange={handleDate} id="date" type="date" />
+          <br />
           <input
             type="text"
             name="muscles"
