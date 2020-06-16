@@ -1,16 +1,106 @@
 body {
-  background-image: url('https://downloadwallpaperhd.net/laptop-wallpapers/weightlifting-wallpaper-free-For-Laptop-Wallpaper.jpg');
+  background: black;
+  background-size: 320%;
+  background-repeat: no-repeat;
+  color: darkgrey;
 }
 
 .site-title {
   color: darkred;
   text-align: center;
+  font-style: italic;
+  margin-top: .4em;
 }
 
 a {
   color: darkgrey;
+  text-decoration-line: none;
 }
 
 li {
   list-style-type: none;
+  text-align: center;
+}
+
+h6 {
+  color: darkred;
+  text-align: center;
+}
+
+li .NavItem {
+  text-align: center;
+}
+
+nav {
+  border: darkred 1px solid;
+}
+
+a:hover, a:active {
+  color: white;
+  font-weight: bold;
+}
+
+#newWorkout {
+  background-color: darkred;
+  margin-top: 3em;
+  color: darkgrey;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+a.NavLink {
+  text-decoration-line: none;
+}
+
+nav.navbar {
+  background: darkred;
+  margin: .5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  justify-content: center;
+}
+
+fieldset {
+  margin-top: 1em;
+}
+
+/* Register/Login */
+
+#registerButton {
+  margin-top: .5em;
+  background: darkred;
+}
+
+#signInButton {
+  background-color: darkred;
+  margin: 1em 4em 0 4em;
+}
+
+.login {
+  margin-right: .5em;
+}
+
+#register {
+  background: darkred;
+  margin: 0 5em;
+}
+
+.registerButtonContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Profile */
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
 }

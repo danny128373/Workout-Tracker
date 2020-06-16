@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ApiManager from '../modules/ApiManager'
 import { Button } from 'reactstrap'
+import './NewWorkout.css'
 
 export default function NewWorkout(props) {
 
@@ -43,7 +44,7 @@ export default function NewWorkout(props) {
 
   return (
     <>
-      {isShown ? <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button> : null}
+      {isShown ? <div className="buttonContainer"><Button size="lg" id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button></div> : null}
       {!isShown ?
         <form>
           <label htmlFor="session">Muscle(s)</label>
@@ -63,7 +64,7 @@ export default function NewWorkout(props) {
               const repsId = `reps-${idx}`;
               const weightId = `weight-${idx}`;
               return (
-                <div key={`set-${idx}`}>
+                <div className="set" key={`set-${idx}`}>
                   <label htmlFor={setId}>{`Set #${idx + 1}`}</label>
                   <input
                     type="text"
@@ -75,7 +76,7 @@ export default function NewWorkout(props) {
                     onChange={handleSetChange}
                   />
                   <br />
-                  <label htmlFor={repsId}>Reps</label>
+                  {/* <label htmlFor={repsId}>Reps</label> */}
                   <input
                     type="text"
                     name={repsId}
@@ -87,14 +88,14 @@ export default function NewWorkout(props) {
 
                   />
                   <br />
-                  <label htmlFor={weightId}>Weight</label>
+                  {/* <label htmlFor={weightId}>Weight</label> */}
                   <input
                     type="text"
                     name={weightId}
                     data-idx={idx}
                     id={weightId}
                     className="weight"
-                    placeholder="Weight"
+                    placeholder="Weight in lbs."
                     onChange={handleSetChange}
                   />
                 </div>
@@ -102,7 +103,7 @@ export default function NewWorkout(props) {
             })
           }
           <br />
-          <input type="button" value="Add New Set" onClick={addSet} />
+          <Button id="setButton" onClick={addSet} >Add New Set</Button>
           <br />
           <label htmlFor="notes">Notes</label>
           <input
@@ -114,7 +115,7 @@ export default function NewWorkout(props) {
             placeholder="Notes about your workout"
           />
           <br />
-          <input type="submit" onClick={onSubmitHandler} value="Submit Workout Log" />
+          <Button id="workoutButton" onClick={onSubmitHandler} >Submit Workout Log</Button>
         </form>
         : null}
     </>

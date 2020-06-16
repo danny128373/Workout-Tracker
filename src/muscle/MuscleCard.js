@@ -5,7 +5,7 @@ export default function MuscleCard(props) {
     <>
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span>
+          <h3><span>
             {props.exercise.exercise.name}
           </span></h3>
           <img alt="calves exercise" src={props.exercise.exercise.url} />

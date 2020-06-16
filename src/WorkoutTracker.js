@@ -4,6 +4,7 @@ import NavBar from './nav/NavBar'
 import ApplicationViews from './ApplicationViews'
 import { withRouter } from 'react-router-dom'
 import Register from './auth/Register'
+import { Button } from 'reactstrap'
 
 const WorkoutTracker = (props) => {
 
@@ -37,7 +38,10 @@ const WorkoutTracker = (props) => {
         ?
         <>
           <Login {...props} setUser={setUser} />
-          <button onClick={registerHandler} >Register</button>
+          <div className="registerButtonContainer">
+            <h4>Don't have an account yet?</h4>
+            <Button id="register" onClick={registerHandler}>Register</Button>
+          </div>
         </>
         : null}
       {!hasUser && register
@@ -49,6 +53,7 @@ const WorkoutTracker = (props) => {
       {hasUser
         ? <ApplicationViews />
         : null}
+
     </>
   )
 }

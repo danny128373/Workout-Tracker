@@ -5,3 +5,12 @@ img {
 .upperlegs {
   margin-top: .5em;
 }
+
+h3 {
+  background: black;
+  margin: 1em;
+}
+
+.card-content {
+  background: black;
+}
