@@ -134,11 +134,12 @@
   "workoutLogs": [
     {
       "id": 1,
-      "date": "2020-05-18",
+      "date": "2020-05-17",
       "userId": 1,
       "notes": "Sick pump!"
     },
     {
+      "date": "2020-05-18",
       "muscles": [
         "Biceps"
       ],
@@ -148,6 +149,7 @@
       "id": 2
     },
     {
+      "date": "2020-05-18",
       "muscles": [
         "Shoulders and Triceps"
       ],
@@ -158,6 +160,7 @@
       "id": 3
     },
     {
+      "date": "2020-05-19",
       "muscles": [
         "Back"
       ],
@@ -168,6 +171,7 @@
       "id": 4
     },
     {
+      "date": "2020-05-20",
       "muscles": [
         "Calves"
       ],
@@ -197,7 +201,7 @@
       "height": "5'10\"",
       "weight": "160",
       "id": 2,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592332629/userImage/ubh6rnzuj3qwl1yr6kkx.jpg"
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592337676/userImage/qtvjoi4u4k7fzhdx9d6v.jpg"
     },
     {
       "name": "Brandy",
