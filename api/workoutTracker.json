@@ -190,13 +190,14 @@
       "url": ""
     },
     {
-      "name": "bb",
+      "name": "Harvey",
       "username": "bb",
       "password": "bb",
-      "age": "bb",
-      "height": "bb",
-      "weight": "bb",
-      "id": 2
+      "age": "30",
+      "height": "5'10\"",
+      "weight": "160",
+      "id": 2,
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592332629/userImage/ubh6rnzuj3qwl1yr6kkx.jpg"
     },
     {
       "name": "Brandy",

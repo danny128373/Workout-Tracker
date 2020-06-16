@@ -27,6 +27,10 @@ h6 {
   text-align: center;
 }
 
+h4 {
+  text-align: center;
+}
+
 li .NavItem {
   text-align: center;
 }
@@ -95,12 +99,5 @@ fieldset {
 .registerButtonContainer {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-
-/* Profile */
-
-.profileContainer {
-  display: flex;
   flex-direction: column;
 }

@@ -2,7 +2,9 @@
   display: none;
 }
 
-#file {}
+#file {
+  color: transparent;
+}
 
 #profileContainer {
   display: flex;
