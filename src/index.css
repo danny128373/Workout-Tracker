@@ -98,8 +98,9 @@ fieldset {
 }
 
 #createAccount {
-  margin: 24em 0 0 2.1em;
+  margin: 24em 0 0 2.3em;
   border-radius: .5em;
+  width: 80%;
 }
 
 /* Profile */
@@ -109,18 +110,33 @@ tr {
 }
 
 .homeContainer {
-  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png')
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png');
 }
 
 .loginContainer {
-  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592424392/Daniel_s_workout_tracker_2_hotl7a.png')
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592434840/Daniel_s_workout_tracker_5_y66zek.png');
+  height: 640px;
+  display: flex;
 }
 
-.loginForm {
-  margin: 11.8em 0 0 8em;
+.usernameInLoginPage {
+  margin-left: 9em;
+  margin-top: 14.6em;
+}
+
+.passwordInLoginPage {
+  margin-top: 1.7em;
+  margin-left: 9em;
+}
+
+#loginPageForm {
+  width: 200%;
   height: 100%;
 }
 
-/* .usernameInLoginPage {
-  margin: 10.8em 0 0 8em;
-} */
+#loginButtonLoginPage {
+  width: 52%;
+  margin-top: 1.5em;
+  margin-left: 9em;
+  border-radius: .4em
+}

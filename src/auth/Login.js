@@ -40,14 +40,14 @@ export default function Login(props) {
   // !hasUser && !register
   return (
     <>
-      <form className="loginForm" onSubmit={onSubmitHandler}>
+      <form id="loginPageForm" className="loginForm">
         <fieldset className="usernameInLoginPage">
           <input type="text" onChange={handleFieldChange} id="username" placeholder="Enter username" />
         </fieldset>
-        <fieldset>
+        <fieldset className="passwordInLoginPage">
           <input onChange={handleFieldChange} type="password" id="password" placeholder="Enter password" />
         </fieldset>
-
+        <img id="loginButtonLoginPage" alt="submit" onClick={onSubmitHandler} src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592417231/Submit_button_230_x_40_2_mmd1ob.png" />
       </form>
     </>
   )
