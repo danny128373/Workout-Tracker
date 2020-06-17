@@ -1,8 +1,4 @@
-body {
-  background: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png');
-}
-
-.site-title {
+/* .site-title {
   color: darkred;
   text-align: center;
   font-style: italic;
@@ -70,11 +66,11 @@ form {
 
 fieldset {
   margin-top: 1em;
-}
+} */
 
 /* Register/Login */
 
-#registerButton {
+/* #registerButton {
   margin-top: .5em;
   background: darkred;
 }
@@ -82,18 +78,18 @@ fieldset {
 #signInButton {
   background-color: darkred;
   margin: 1em 4em 0 4em;
-}
+} */
 
-#signIn {
+/* #signIn {
   width: 25%;
   margin-top: 20em;
   margin-left: 13em;
   border-radius: .5em;
-}
+} */
 
-.login {
+/* .login {
   margin-right: .5em;
-}
+} */
 
 .registerButtonContainer {
   display: flex;
@@ -111,3 +107,20 @@ fieldset {
 tr {
   color: white;
 }
+
+.homeContainer {
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png')
+}
+
+.loginContainer {
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592424392/Daniel_s_workout_tracker_2_hotl7a.png')
+}
+
+.loginForm {
+  margin: 11.8em 0 0 8em;
+  height: 100%;
+}
+
+/* .usernameInLoginPage {
+  margin: 10.8em 0 0 8em;
+} */

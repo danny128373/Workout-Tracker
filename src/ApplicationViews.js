@@ -17,6 +17,7 @@ import UpperLegsList from './muscle/upperlegs/UpperLegsList'
 import Profile from './profile/Profile'
 import WorkoutLogList from './workoutLog/WorkoutLogList'
 import Register from './auth/Register'
+import Home from './home/Home'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
@@ -73,6 +74,9 @@ export default function ApplicationViews(props) {
       }} />
       <Route exact path="/register" render={(props) => {
         return <Register {...props} />
+      }} />
+      <Route exact path="/" render={(props) => {
+        return <Home {...props} />
       }} />
     </>
   )

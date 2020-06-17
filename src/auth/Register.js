@@ -49,7 +49,7 @@ export default function Register(props) {
         <input onChange={handleFormChange} type="text" id="height" name="height" placeholder="Height" />
         <label htmlFor="weight">Weight:</label>
         <input onChange={handleFormChange} type="text" id="weight" name="weight" placeholder="Weight" />
-        <Button id="registerButton" onClick={onSubmitHandler}>Register Account</Button>
+        {/* <Button id="registerButton" onClick={onSubmitHandler}>Register Account</Button> */}
         <Link to="/login"><img id="signIn" alt="signin" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592409847/SIGN_IN_bsw0ix.png" /></Link>
       </form>
     </>

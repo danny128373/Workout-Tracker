@@ -5,7 +5,7 @@ import ApplicationViews from './ApplicationViews'
 import { withRouter } from 'react-router-dom'
 import Register from './auth/Register'
 import { Button } from 'reactstrap'
-import Home from './auth/Home'
+import Home from './home/Home'
 
 const WorkoutTracker = (props) => {
 
@@ -14,6 +14,7 @@ const WorkoutTracker = (props) => {
 
   const [hasUser, setHasUser] = useState(isAuthenticated())
   const [register, setRegister] = useState(false)
+  const [login, setLogin] = useState(false)
 
   useEffect(() => {
     setHasUser(isAuthenticated());
@@ -33,18 +34,24 @@ const WorkoutTracker = (props) => {
     setRegister(true)
   }
 
+
+  const loginHandler = () => {
+    setLogin(true)
+  }
+
   return (
     <>
-      {!hasUser && !register ?
-        <Home registerHandler={registerHandler} />
+
+      {(!hasUser && !register && !login) ?
+        <Home loginHandler={loginHandler} registerHandler={registerHandler} />
         : null}
-      {/* {!hasUser && !register
+      {!hasUser && !register && login
         ?
-        <>
+        <div className="loginContainer">
           <Login {...props} registerHandler={registerHandler} setUser={setUser} hasUser={hasUser} />
-        </>
-        : null} */}
-      {!hasUser && register
+        </div>
+        : null}
+      {!hasUser && register && !login
         ? <Register hasUser={hasUser} registerHandler={registerHandler} sethasUser={setHasUser} setHasRegister={setRegister} setUser={setUser} register={register} {...props} setUser={setUser} />
         : null}
       {hasUser
