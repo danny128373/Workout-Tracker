@@ -15,12 +15,14 @@ export default function Register(props) {
   const onSubmitHandler = (event) => {
     event.preventDefault()
     // if (user.name === "" && user.username === "" && user.age === "" && user.height === "" && user.weight === "") {
-    ApiManager.post(user, 'users')
+    ApiManager.post(user, 'users').then(e => {
+      props.setHasRegister(false)
+      props.history.push('/')
+    })
     // } else {
     //   alert("Please complete all input fields")
     // }
-    props.setHasRegister(false)
-    props.history.push('/')
+
   }
 
   return (
