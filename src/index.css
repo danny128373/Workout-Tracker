@@ -1,8 +1,5 @@
 body {
-  background: black;
-  background-size: 320%;
-  background-repeat: no-repeat;
-  color: darkgrey;
+  background: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png');
 }
 
 .site-title {
@@ -87,17 +84,30 @@ fieldset {
   margin: 1em 4em 0 4em;
 }
 
-.login {
-  margin-right: .5em;
+#signIn {
+  width: 25%;
+  margin-top: 20em;
+  margin-left: 13em;
+  border-radius: .5em;
 }
 
-#register {
-  background: darkred;
-  margin: 0 5em;
+.login {
+  margin-right: .5em;
 }
 
 .registerButtonContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#createAccount {
+  margin: 24em 0 0 2.1em;
+  border-radius: .5em;
+}
+
+/* Profile */
+
+tr {
+  color: white;
 }

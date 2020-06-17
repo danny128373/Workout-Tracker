@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import ApiManager from '../modules/ApiManager'
 import { Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 export default function Register(props) {
+
+
 
   const [user, setUser] = useState({ name: "", username: "", password: "", age: "", height: "", weight: "" })
 
@@ -22,7 +25,6 @@ export default function Register(props) {
     // } else {
     //   alert("Please complete all input fields")
     // }
-
   }
 
   return (
@@ -48,6 +50,7 @@ export default function Register(props) {
         <label htmlFor="weight">Weight:</label>
         <input onChange={handleFormChange} type="text" id="weight" name="weight" placeholder="Weight" />
         <Button id="registerButton" onClick={onSubmitHandler}>Register Account</Button>
+        <Link to="/login"><img id="signIn" alt="signin" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592409847/SIGN_IN_bsw0ix.png" /></Link>
       </form>
     </>
   )

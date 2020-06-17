@@ -5,6 +5,7 @@ import ApplicationViews from './ApplicationViews'
 import { withRouter } from 'react-router-dom'
 import Register from './auth/Register'
 import { Button } from 'reactstrap'
+import Home from './auth/Home'
 
 const WorkoutTracker = (props) => {
 
@@ -34,18 +35,17 @@ const WorkoutTracker = (props) => {
 
   return (
     <>
-      {!hasUser && !register
+      {!hasUser && !register ?
+        <Home registerHandler={registerHandler} />
+        : null}
+      {/* {!hasUser && !register
         ?
         <>
-          <Login {...props} setUser={setUser} />
-          <div className="registerButtonContainer">
-            <h4>Don't have an account yet?</h4>
-            <Button id="register" onClick={registerHandler}>Register</Button>
-          </div>
+          <Login {...props} registerHandler={registerHandler} setUser={setUser} hasUser={hasUser} />
         </>
-        : null}
+        : null} */}
       {!hasUser && register
-        ? <Register hasUser={hasUser} sethasUser={setHasUser} setHasRegister={setRegister} setUser={setUser} register={register} {...props} setUser={setUser} />
+        ? <Register hasUser={hasUser} registerHandler={registerHandler} sethasUser={setHasUser} setHasRegister={setRegister} setUser={setUser} register={register} {...props} setUser={setUser} />
         : null}
       {hasUser
         ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
@@ -53,7 +53,6 @@ const WorkoutTracker = (props) => {
       {hasUser
         ? <ApplicationViews clearUser={clearUser} {...props} />
         : null}
-
     </>
   )
 }

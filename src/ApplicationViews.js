@@ -16,6 +16,7 @@ import TricepsList from './muscle/triceps/TricepsList'
 import UpperLegsList from './muscle/upperlegs/UpperLegsList'
 import Profile from './profile/Profile'
 import WorkoutLogList from './workoutLog/WorkoutLogList'
+import Register from './auth/Register'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
@@ -69,6 +70,9 @@ export default function ApplicationViews(props) {
       }} />
       <Route exact path="/workoutLogs" render={(props) => {
         return <WorkoutLogList {...props} />
+      }} />
+      <Route exact path="/register" render={(props) => {
+        return <Register {...props} />
       }} />
     </>
   )
