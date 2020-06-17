@@ -180,6 +180,13 @@
       ],
       "userId": 2,
       "id": 5
+    },
+    {
+      "date": "",
+      "muscles": "",
+      "notes": "",
+      "userId": 4,
+      "id": 6
     }
   ],
   "users": [
@@ -211,6 +218,42 @@
       "height": "5'6\"",
       "weight": "180",
       "id": 3
+    },
+    {
+      "name": "aa",
+      "username": "aa",
+      "password": "aa",
+      "age": "aa",
+      "height": "aa",
+      "weight": "aa",
+      "id": 4
+    },
+    {
+      "name": "",
+      "username": "aa",
+      "password": "aa",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "username": "ee",
+      "password": "ee",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "username": "ee",
+      "password": "ee",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "id": 7
     }
   ],
   "muscles": [
