@@ -51,7 +51,7 @@ const WorkoutTracker = (props) => {
         ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
         : null}
       {hasUser
-        ? <ApplicationViews />
+        ? <ApplicationViews clearUser={clearUser} {...props} />
         : null}
 
     </>
