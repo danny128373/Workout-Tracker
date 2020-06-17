@@ -17,10 +17,6 @@ import {
 } from 'reactstrap'
 
 const NavBar = (props) => {
-  const handleLogout = () => {
-    props.clearUser();
-    props.history.push('/login');
-  }
 
   return (
     <>
@@ -36,7 +32,6 @@ const NavBar = (props) => {
         <NavItem><Link to="/muscle" className="NavLink">Discover<br /> Exercises</Link></NavItem>
         <NavItem><Link to="/workoutLogs" className="NavLink">Workout<br /> Logs</Link></NavItem>
         <NavItem><Link to="/profile" className="NavLink">Profile</Link></NavItem>
-        <NavItem><Link to="/login" className="NavLink" onClick={handleLogout}>Logout</Link></NavItem>
       </Navbar>
     </>
   )

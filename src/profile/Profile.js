@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import ApiManager from '../modules/ApiManager'
 import './Profile.css'
+
 
 export default function Profile(props) {
 
@@ -37,6 +39,11 @@ export default function Profile(props) {
     //file.url has link of profile pic
   }
 
+  const handleLogout = () => {
+    props.clearUser()
+    props.history.push('/login')
+  }
+
   useEffect(getUser, [])
 
   return (
@@ -61,6 +68,7 @@ export default function Profile(props) {
       <p>Age: {user.age}</p>
       <p>Height: {user.height}</p>
       <p>Weight: {user.weight} lbs.</p>
+      <Link to="/login" className="" onClick={handleLogout}>Logout</Link>
     </div>
   )
 }
