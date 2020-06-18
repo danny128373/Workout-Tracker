@@ -1,11 +1,4 @@
-body {
-  background: black;
-  background-size: 320%;
-  background-repeat: no-repeat;
-  color: darkgrey;
-}
-
-.site-title {
+/* .site-title {
   color: darkred;
   text-align: center;
   font-style: italic;
@@ -73,11 +66,11 @@ form {
 
 fieldset {
   margin-top: 1em;
-}
+} */
 
 /* Register/Login */
 
-#registerButton {
+/* #registerButton {
   margin-top: .5em;
   background: darkred;
 }
@@ -85,19 +78,122 @@ fieldset {
 #signInButton {
   background-color: darkred;
   margin: 1em 4em 0 4em;
-}
+} */
 
-.login {
+/* #signIn {
+  width: 25%;
+  margin-top: 20em;
+  margin-left: 13em;
+  border-radius: .5em;
+} */
+
+/* .login {
   margin-right: .5em;
-}
-
-#register {
-  background: darkred;
-  margin: 0 5em;
-}
+} */
 
 .registerButtonContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#createAccount {
+  margin: 24em 0 0 2.3em;
+  border-radius: .5em;
+  width: 80%;
+}
+
+/* Profile */
+
+tr {
+  color: white;
+}
+
+.homeContainer {
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png');
+}
+
+.loginContainer {
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592434840/Daniel_s_workout_tracker_5_y66zek.png');
+  height: 640px;
+  display: flex;
+}
+
+.usernameInLoginPage {
+  margin-left: 9em;
+  margin-top: 14.6em;
+}
+
+.passwordInLoginPage {
+  margin-top: 1.7em;
+  margin-left: 9em;
+}
+
+#loginPageForm {
+  width: 200%;
+  height: 100%;
+}
+
+#loginButtonLoginPage {
+  width: 52%;
+  margin-top: 1.5em;
+  margin-left: 9em;
+  border-radius: .4em;
+}
+
+.registerContainer {
+  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592424390/Daniel_s_workout_tracker_1_oshqkb.png');
+  font-weight: bold;
+  color: #2c98d8;
+  font-variant: Alatsi;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: -webkit-fill-available;
+}
+
+.registrationFormFieldSet {}
+
+#registrationFormField1 {
+  margin-left: 10.3em;
+  margin-top: 13.6em;
+}
+
+#registrationFormField2 {
+  margin-left: 10.3em;
+  margin-top: .6em;
+}
+
+#registrationFormField3 {
+  margin-left: 10.3em;
+  margin-top: .6em;
+}
+
+#registrationFormField4 {
+  margin-left: 10.3em;
+  margin-top: 3.2em;
+}
+
+#registrationFormField5 {
+  margin-left: 10.3em;
+  margin-top: .6em;
+}
+
+#registrationFormField6 {
+  margin-left: 10.3em;
+  margin-top: .6em;
+}
+
+#registrationFormField7 {
+  margin-left: 10.3em;
+  margin-top: .6em;
+}
+
+#registrationFormParent {}
+
+#signIn {
+  margin-left: 14em;
+  margin-top: 1.5em;
+  border-radius: .5em;
+  margin-bottom: 15em;
 }

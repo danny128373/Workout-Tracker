@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ApiManager from '../modules/ApiManager'
-import { Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 export default function Register(props) {
 
@@ -14,40 +14,38 @@ export default function Register(props) {
 
   const onSubmitHandler = (event) => {
     event.preventDefault()
-    // if (user.name === "" && user.username === "" && user.age === "" && user.height === "" && user.weight === "") {
     ApiManager.post(user, 'users').then(e => {
       props.setHasRegister(false)
       props.history.push('/')
     })
-    // } else {
-    //   alert("Please complete all input fields")
-    // }
 
   }
 
   return (
     <>
-      <header>
-        <h1 className="site-title">
-          Workout Tracker
-          <br />
-        </h1>
-        <h6 className="site-title">Does it really count if you don't log it?</h6>
-      </header>
-      <form>
-        <label htmlFor="name">Name:</label>
-        <input onChange={handleFormChange} type="text" id="name" name="name" placeholder="Name" />
-        <label htmlFor="userName">Username:</label>
-        <input onChange={handleFormChange} type="text" id="username" name="username" placeholder="Username" />
-        <label htmlFor="password">Password:</label>
-        <input onChange={handleFormChange} type="password" id="password" name="password" placeholder="Password" />
-        <label htmlFor="age">Age:</label>
-        <input onChange={handleFormChange} type="text" id="age" name="age" placeholder="Age" />
-        <label htmlFor="height">Height:</label>
-        <input onChange={handleFormChange} type="text" id="height" name="height" placeholder="Height" />
-        <label htmlFor="weight">Weight:</label>
-        <input onChange={handleFormChange} type="text" id="weight" name="weight" placeholder="Weight" />
-        <Button id="registerButton" onClick={onSubmitHandler}>Register Account</Button>
+      <form id='registrationFormParent'>
+        <fieldset id="registrationFormField1" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="name" name="name" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField2" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="username" name="username" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField3" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="password" id="password" name="password" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField4" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="weight" name="weight" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField5" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="height" name="height" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField6" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="gender" name="gender" placeholder="" />
+        </fieldset>
+        <fieldset id="registrationFormField7" className="registrationFormFieldSet">
+          <input onChange={handleFormChange} type="text" id="age" name="age" placeholder="" />
+        </fieldset>
+        <Link to="/login"><img onClick={onSubmitHandler} id="signIn" alt="signin" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592409847/SIGN_IN_bsw0ix.png" /></Link>
       </form>
     </>
   )
