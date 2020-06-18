@@ -11,7 +11,7 @@ export default function Home(props) {
       <p>How many reps? Always one more.</p>
       <Link to="register"><Button id="createAccount" onClick={props.registerHandler}>Create Account</Button></Link>
       <p className="alreadyMember">Already a member?</p>
-      <Link to="login"><Button id="homeSignIn" onClick={props.loginHandler}>Sign In</Button></Link>
+      <Link to="login"><Button id="signInHome" onClick={props.loginHandler}>Sign In</Button></Link>
     </div>
   )
 }

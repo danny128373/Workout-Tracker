@@ -1,3 +1,7 @@
+p {
+  font-weight: bold;
+}
+
 /* Home/Login/Register */
 
 .banner {
@@ -6,7 +10,8 @@
   background-image: linear-gradient(#ffffff, #2285bc);
   color: white;
   text-align: center;
-  line-height: 300%;
+  line-height: 200%;
+  width: 100%;
 }
 
 #logoHome {
@@ -26,6 +31,7 @@
 
 .homeContainer {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -41,6 +47,14 @@
 
 label {
   color: #2c98d8;
+}
+
+#createAccount {
+  background: #2c98d8;
+}
+
+#signInHome {
+  background: #2c98d8;
 }
 
 /* Navbar */
