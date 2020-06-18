@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ApiManager from '../modules/ApiManager'
+import { Button } from 'reactstrap'
 
 export default function Login(props) {
 
@@ -40,14 +41,18 @@ export default function Login(props) {
   // !hasUser && !register
   return (
     <>
-      <form id="loginPageForm" className="loginForm">
+      <img className="logo" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
+      <p className="banner">Login</p>
+      <form>
         <fieldset className="usernameInLoginPage">
-          <input type="text" onChange={handleFieldChange} id="username" placeholder="Enter username" />
+          <label htmlFor="username">Username:</label>
+          <input type="text" onChange={handleFieldChange} id="username" />
         </fieldset>
         <fieldset className="passwordInLoginPage">
-          <input onChange={handleFieldChange} type="password" id="password" placeholder="Enter password" />
+          <label htmlFor="username">Password:</label>
+          <input onChange={handleFieldChange} type="password" id="password" />
         </fieldset>
-        <img id="loginButtonLoginPage" alt="submit" onClick={onSubmitHandler} src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592417231/Submit_button_230_x_40_2_mmd1ob.png" />
+        <Button id="loginButtonLoginPage" onClick={onSubmitHandler}>Submit</Button>
       </form>
     </>
   )

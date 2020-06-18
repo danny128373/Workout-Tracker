@@ -1,199 +1,95 @@
-/* .site-title {
-  color: darkred;
-  text-align: center;
-  font-style: italic;
-  margin-top: .4em;
-}
+/* Home/Login/Register */
 
-a {
-  color: darkgrey;
-  text-decoration-line: none;
-}
-
-li {
-  list-style-type: none;
-  text-align: center;
-}
-
-h6 {
-  color: darkred;
-  text-align: center;
-}
-
-h4 {
-  text-align: center;
-}
-
-li .NavItem {
-  text-align: center;
-}
-
-nav {
-  border: darkred 1px solid;
-}
-
-a:hover, a:active {
+.banner {
+  font-size: 35px;
+  background-color: #f3ec78;
+  background-image: linear-gradient(#ffffff, #2285bc);
   color: white;
-  font-weight: bold;
+  text-align: center;
+  line-height: 300%;
 }
 
-#newWorkout {
-  background-color: darkred;
-  margin-top: 3em;
-  color: darkgrey;
+#logoHome {
+  width: 65%;
+  align-self: center;
 }
 
-.buttonContainer {
-  display: flex;
-  justify-content: center;
+#logoRegister {
+  width: 65%;
+  align-self: center;
 }
 
-a.NavLink {
-  text-decoration-line: none;
-}
-
-nav.navbar {
-  background: darkred;
-  margin: .5em 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  justify-content: center;
-}
-
-fieldset {
-  margin-top: 1em;
-} */
-
-/* Register/Login */
-
-/* #registerButton {
-  margin-top: .5em;
-  background: darkred;
-}
-
-#signInButton {
-  background-color: darkred;
-  margin: 1em 4em 0 4em;
-} */
-
-/* #signIn {
-  width: 25%;
-  margin-top: 20em;
-  margin-left: 13em;
-  border-radius: .5em;
-} */
-
-/* .login {
-  margin-right: .5em;
-} */
-
-.registerButtonContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#createAccount {
-  margin: 24em 0 0 2.3em;
-  border-radius: .5em;
-  width: 80%;
-}
-
-/* Profile */
-
-tr {
-  color: white;
+.logo {
+  width: 65%;
+  align-self: center;
 }
 
 .homeContainer {
-  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592407894/Daniel_s_workout_tracker_mhl5st.png');
-}
-
-.loginContainer {
-  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592434840/Daniel_s_workout_tracker_5_y66zek.png');
-  height: 640px;
   display: flex;
-}
-
-.usernameInLoginPage {
-  margin-left: 9em;
-  margin-top: 14.6em;
-}
-
-.passwordInLoginPage {
-  margin-top: 1.7em;
-  margin-left: 9em;
-}
-
-#loginPageForm {
-  width: 200%;
-  height: 100%;
-}
-
-#loginButtonLoginPage {
-  width: 52%;
-  margin-top: 1.5em;
-  margin-left: 9em;
-  border-radius: .4em;
+  flex-direction: column;
 }
 
 .registerContainer {
-  background-image: url('https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592424390/Daniel_s_workout_tracker_1_oshqkb.png');
-  font-weight: bold;
-  color: #2c98d8;
-  font-variant: Alatsi;
   display: flex;
   flex-direction: column;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #2c98d8;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  border: #dfdddd 5px solid;
+  flex-wrap: nowrap;
+  background: white;
+  height: 15%;
+  margin-bottom: 0px;
+}
+
+.navLink {
+  width: 110%;
+}
+
+#logoApp {
+  width: 200px;
+}
+
+#profileContainer {
+  margin-bottom: 96px;
+}
+
+#workoutLogContainer {
+  margin-bottom: 96px;
+}
+
+#logoAppContainer {
+  display: flex;
   justify-content: center;
-  min-height: -webkit-fill-available;
 }
 
-.registrationFormFieldSet {}
-
-#registrationFormField1 {
-  margin-left: 10.3em;
-  margin-top: 13.6em;
+.exerciseImages {
+  width: 360px
 }
 
-#registrationFormField2 {
-  margin-left: 10.3em;
-  margin-top: .6em;
+.exerciseName {
+  color: #2c98d8;
+  text-align-last: center;
 }
 
-#registrationFormField3 {
-  margin-left: 10.3em;
-  margin-top: .6em;
+body {
+  color: #2c98d8;
 }
 
-#registrationFormField4 {
-  margin-left: 10.3em;
-  margin-top: 3.2em;
-}
-
-#registrationFormField5 {
-  margin-left: 10.3em;
-  margin-top: .6em;
-}
-
-#registrationFormField6 {
-  margin-left: 10.3em;
-  margin-top: .6em;
-}
-
-#registrationFormField7 {
-  margin-left: 10.3em;
-  margin-top: .6em;
-}
-
-#registrationFormParent {}
-
-#signIn {
-  margin-left: 14em;
-  margin-top: 1.5em;
-  border-radius: .5em;
-  margin-bottom: 15em;
+td, th {
+  color: #2c98d8;
+  font-weight: bold;
 }
