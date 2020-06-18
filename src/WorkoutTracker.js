@@ -57,11 +57,14 @@ const WorkoutTracker = (props) => {
           <Register hasUser={hasUser} registerHandler={registerHandler} sethasUser={setHasUser} setHasRegister={setRegister} setUser={setUser} register={register} {...props} setUser={setUser} />
         </div>
         : null}
-      {hasUser
-        ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
+      {hasUser ?
+        <>
+          <img id="logoHome" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
+          <ApplicationViews clearUser={clearUser} {...props} />
+        </>
         : null}
       {hasUser
-        ? <ApplicationViews clearUser={clearUser} {...props} />
+        ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
         : null}
     </>
   )

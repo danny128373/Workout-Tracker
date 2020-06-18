@@ -24,9 +24,11 @@ export default function ApplicationViews(props) {
 
   return (
     <>
-      <Route exact path="/newWorkout" render={(props) => {
-        return <NewWorkout {...props} />
-      }} />
+      <div className="workoutContainer">
+        <Route exact path="/newWorkout" render={(props) => {
+          return <NewWorkout {...props} />
+        }} />
+      </div>
       <Route exact path="/login" render={(props) => {
         return <Login {...props} />
       }} />
