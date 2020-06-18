@@ -41,9 +41,9 @@ export default function Login(props) {
   // !hasUser && !register
   return (
     <>
-      <img className="logo" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
       <p className="banner">Login</p>
-      <form>
+      <img className="logo" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
+      <form className="loginForm">
         <fieldset className="usernameInLoginPage">
           <label htmlFor="username">Username:</label>
           <input type="text" onChange={handleFieldChange} id="username" />
