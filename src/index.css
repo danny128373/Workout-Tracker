@@ -43,6 +43,13 @@ p {
 .loginContainer {
   display: flex;
   flex-direction: column;
+  font-weight: bold;
+  align-items: center;
+}
+
+#loginButtonLoginPage {
+  background: #2c98d8;
+  margin-top: 1em;
 }
 
 label {
@@ -55,6 +62,18 @@ label {
 
 #signInHome {
   background: #2c98d8;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+#username {
+  margin-left: 0.5em;
+}
+
+#password {
+  margin-left: .7em;
 }
 
 /* Navbar */
