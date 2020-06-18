@@ -71,9 +71,11 @@ export default function ApplicationViews(props) {
       <Route exact path="/profile" render={(props) => {
         return <Profile {...props} clearUser={clearUser} />
       }} />
-      <Route exact path="/workoutLogs" render={(props) => {
-        return <WorkoutLogList {...props} />
-      }} />
+      <div id="workoutLogContainer">
+        <Route exact path="/workoutLogs" render={(props) => {
+          return <WorkoutLogList {...props} />
+        }} />
+      </div>
       <Route exact path="/register" render={(props) => {
         return <Register {...props} />
       }} />

@@ -27,7 +27,7 @@ export default function WorkoutLogList(props) {
     <>
       {workouts.reverse().map(workout => {
         return (
-          <Table body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} key={workout.id}>
+          <Table style={{ backgroundColor: '#333', borderColor: '#333' }} key={workout.id}>
             <thead>
               <tr>
                 <td>{dateFormatter(workout.date)}</td>
@@ -69,22 +69,3 @@ export default function WorkoutLogList(props) {
     </>
   )
 }
-
-// <CardBody>
-//               <h3>{dateFormatter(workout.date)}</h3>
-//               <CardTitle>Muscle(s) Trained: {workout.muscles[0]}</CardTitle>
-//               {workout.sets.map((set, index) => {
-//                 return (
-//                   <>
-//                     <CardSubtitle key={set.id}>
-//                       {`Set# ${index + 1} `}: {set.name}
-//                     </CardSubtitle>
-//                     <CardText>
-//                       Reps: {set.reps}<br />
-//                       Weight: {set.weight}
-//                     </CardText>
-//                   </>
-//                 )
-//               })}
-//             Notes: {workout.notes[0]}
-//             </CardBody>

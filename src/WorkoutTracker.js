@@ -59,7 +59,9 @@ const WorkoutTracker = (props) => {
         : null}
       {hasUser ?
         <>
-          <img id="logoHome" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
+          <div id="logoAppContainer">
+            <img id="logoApp" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
+          </div>
           <ApplicationViews clearUser={clearUser} {...props} />
         </>
         : null}

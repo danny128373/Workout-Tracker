@@ -55,4 +55,19 @@ label {
   width: 110%;
 }
 
-/* #dfdddd */
+#logoApp {
+  width: 200px;
+}
+
+#profileContainer {
+  margin-bottom: 96px;
+}
+
+#workoutLogContainer {
+  margin-bottom: 96px;
+}
+
+#logoAppContainer {
+  display: flex;
+  justify-content: center;
+}
