@@ -24,9 +24,9 @@ export default function Register(props) {
 
   return (
     <>
-      <img id="logoRegister" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
       <p className="banner">Create Account</p>
-      <form>
+      <img id="logoRegister" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
+      <form className="registerForm">
         <fieldset id="registrationFormField1" className="registrationFormFieldSet">
           <label htmlFor="name">Name:</label>
           <input onChange={handleFormChange} type="text" id="name" name="name" />
@@ -55,7 +55,7 @@ export default function Register(props) {
           <label htmlFor="age">Age:</label>
           <input onChange={handleFormChange} type="text" id="age" name="age" />
         </fieldset>
-        <Link to="/login"><Button onClick={onSubmitHandler} id="signIn" alt="signin">Submit</Button></Link>
+        <Link to="/login"><Button onClick={onSubmitHandler} id="signInRegister" alt="signin">Submit</Button></Link>
       </form>
     </>
   )

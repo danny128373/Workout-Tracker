@@ -49,7 +49,11 @@ export default function NewWorkout(props) {
 
   return (
     <>
-      {isShown ? <div className="buttonContainer"><Button size="lg" id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button></div> : null}
+      {isShown ?
+        <div className="buttonContainer">
+          <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
+        </div>
+        : null}
       {!isShown ?
         <form>
           <label htmlFor="date">Date: </label>
