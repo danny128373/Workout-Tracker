@@ -1,3 +1,5 @@
+/* Home/Login/Register */
+
 .banner {
   font-size: 35px;
   background-color: #f3ec78;
@@ -41,6 +43,8 @@ label {
   color: #2c98d8;
 }
 
+/* Navbar */
+
 .navbar {
   display: flex;
   list-style-type: none;
@@ -70,4 +74,22 @@ label {
 #logoAppContainer {
   display: flex;
   justify-content: center;
+}
+
+.exerciseImages {
+  width: 360px
+}
+
+.exerciseName {
+  color: #2c98d8;
+  text-align-last: center;
+}
+
+body {
+  color: #2c98d8;
+}
+
+td, th {
+  color: #2c98d8;
+  font-weight: bold;
 }

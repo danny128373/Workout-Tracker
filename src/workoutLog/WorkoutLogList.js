@@ -27,7 +27,7 @@ export default function WorkoutLogList(props) {
     <>
       {workouts.reverse().map(workout => {
         return (
-          <Table style={{ backgroundColor: '#333', borderColor: '#333' }} key={workout.id}>
+          <Table key={workout.id}>
             <thead>
               <tr>
                 <td>{dateFormatter(workout.date)}</td>
