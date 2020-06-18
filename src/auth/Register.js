@@ -45,7 +45,7 @@ export default function Register(props) {
         <fieldset id="registrationFormField7" className="registrationFormFieldSet">
           <input onChange={handleFormChange} type="text" id="age" name="age" placeholder="" />
         </fieldset>
-        <Link to="/login"><img onClick={onSubmitHandler} id="signIn" alt="signin" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592409847/SIGN_IN_bsw0ix.png" /></Link>
+        <Link to="/login"><img onClick={onSubmitHandler} id="signIn" alt="signin" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592417231/Submit_button_230_x_40_2_mmd1ob.png" /></Link>
       </form>
     </>
   )
