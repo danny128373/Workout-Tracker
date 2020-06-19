@@ -5,10 +5,10 @@ export default function AbsCard(props) {
     <>
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span>
+          <img className="exerciseImages" alt="abs exercise" src={props.ab.exercise.url} />
+          <h5><span>
             {props.ab.exercise.name}
-          </span></h3>
-          <img alt="abs exercise" src={props.ab.exercise.url} />
+          </span></h5>
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}

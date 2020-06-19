@@ -16,11 +16,11 @@ export default function BackList(props) {
   return (
     <>
       <section className="section-content">
-        <button type="button"
+        {/* <button type="button"
           className="btn"
           onClick={() => { props.history.push("/back/new") }}>
           Add New Exercise
-        </button>
+        </button> */}
       </section>
       <div className="container-cards">
         {backs.map(back => <BackCard key={back.id} back={back} {...props} />)}

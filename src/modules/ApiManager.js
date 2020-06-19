@@ -30,5 +30,9 @@ export default {
   },
   getAllWorkoutLogsWithUser(id, collection) {
     return fetch(`${remoteURL}/${collection}?_embed=sets&userId=${id}`).then(data => data.json())
+  },
+  searchLogs(userInput, id) {
+    return fetch(`${remoteURL}/sets?_expand=workoutLog&name_like=${userInput}&userId=${id}`)
+      .then(e => e.json())
   }
 }

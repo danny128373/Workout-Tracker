@@ -170,7 +170,8 @@ label {
 }
 
 .exerciseImages {
-  width: 360px
+  width: 24%;
+  border-radius: 81px;
 }
 
 .exerciseName {
@@ -194,12 +195,18 @@ td {
   font-family: 'Alatsi', sans-serif;
 }
 
+/* Workout */
+
+.workoutContainer {
+  margin-top: 170px;
+}
+
 .buttonContainer {
   text-align: center;
 }
 
 #newWorkout {
-  margin-top: 220px;
+  margin-top: 55px;
   font-size: xx-large;
   background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
 }
@@ -231,6 +238,15 @@ td {
   font-weight: bold;
 }
 
+input#searchExercises {
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-top: 12px;
+  padding: 5px;
+  width: 200px;
+  box-shadow: 1px 1px #888888;
+}
+
 /* Exercises */
 
 div.container img {
@@ -238,15 +254,6 @@ div.container img {
   border-style: none;
   width: 93%;
   margin-top: 18px;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 134px;
 }
 
 /* Profile */
@@ -258,7 +265,7 @@ div.container img {
 #profileContainer img {
   width: 236px;
   border-radius: 13px;
-  margin-top: 59px;
+  margin-top: 5px;
 }
 
 input[type="file"] {
@@ -270,7 +277,25 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
-  margin-top: 11px;
+  margin-top: 17px;
   background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
   color: white;
+  border-radius: 7px;
+}
+
+#logout {
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+}
+
+/* this keeps messing up, keep an eye on it */
+
+.workoutContainer {
+  margin-top: 147px;
+}
+
+/* Muscle Cards */
+
+.card-content {
+  display: flex;
+  text-align: left;
 }
