@@ -23,13 +23,14 @@ p {
 #logoRegister {
   width: 49%;
   align-self: center;
-  margin-top: 37px;
+  margin-top: -2px;
 }
 
 .logo {
   width: 49%;
   align-self: center;
   margin-top: 37px;
+  margin-bottom: 45px;
 }
 
 .homeContainer {
@@ -56,7 +57,7 @@ p {
 
 #username {
   margin-left: 7px;
-  margin-top: 50px;
+  margin-top: 1px;
 }
 
 #name {
@@ -237,6 +238,15 @@ div.container img {
   border-style: none;
   width: 93%;
   margin-top: 18px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 134px;
 }
 
 /* Profile */
