@@ -198,6 +198,17 @@
       ],
       "userId": 2,
       "id": 7
+    },
+    {
+      "date": "2020-06-18",
+      "muscles": [
+        "Chest"
+      ],
+      "notes": [
+        "Felt great!"
+      ],
+      "userId": 2,
+      "id": 8
     }
   ],
   "users": [
@@ -219,7 +230,7 @@
       "height": "5'10\"",
       "weight": "160",
       "id": 2,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592584159/userImage/igfummawlkgdx4j9l4vv.jpg"
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592594486/userImage/akb5mojo6zpy8z2vmxt1.jpg"
     },
     {
       "name": "Brandy",
@@ -254,47 +265,58 @@
   "muscles": [
     {
       "id": 1,
-      "name": "Abs"
+      "name": "Abs",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419745/5_1_mv0btc.png"
     },
     {
       "id": 2,
-      "name": "Back"
+      "name": "Back",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419807/7_1_ufkqpo.png"
     },
     {
       "id": 3,
-      "name": "Biceps"
+      "name": "Biceps",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419705/1_1_xeo4jy.png"
     },
     {
       "id": 4,
-      "name": "Calves"
+      "name": "Calves",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419736/4_1_omygmr.png"
     },
     {
       "id": 5,
-      "name": "Cardio"
+      "name": "Cardio",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419814/8_1_yjnt06.png"
     },
     {
       "id": 6,
-      "name": "Chest"
+      "name": "Chest",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419799/6_1_m9hl0v.png"
     },
     {
       "id": 7,
-      "name": "Forearms"
+      "name": "Forearms",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419840/11_1_ouvnwn.png"
     },
     {
       "id": 8,
-      "name": "Glutes"
+      "name": "Glutes",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419852/12_1_n9qcbk.png"
     },
     {
       "id": 9,
-      "name": "Shoulders"
+      "name": "Shoulders",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419725/3_1_sdztok.png"
     },
     {
       "id": 10,
-      "name": "Triceps"
+      "name": "Triceps",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419829/10_1_mb1ajn.png"
     },
     {
       "id": 11,
-      "name": "Quads and Hamstrings"
+      "name": "Quads and Hamstrings",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419822/9_1_cg5f5y.png"
     }
   ],
   "sets": [
@@ -389,6 +411,22 @@
       "workoutLogId": 7,
       "userId": 2,
       "id": 12
+    },
+    {
+      "name": "Bench Press",
+      "reps": "8",
+      "weight": "135",
+      "workoutLogId": 8,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "name": "Push ups",
+      "reps": "20 ",
+      "weight": "0",
+      "workoutLogId": 8,
+      "userId": 2,
+      "id": 14
     }
   ],
   "muscleExercises": [
