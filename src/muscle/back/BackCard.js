@@ -5,10 +5,10 @@ export default function BackCard(props) {
     <>
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span>
+          <img className="exerciseImages" src={props.back.exercise.url} />
+          <h5><span>
             {props.back.exercise.name}
-          </span></h3>
-          <img src={props.back.exercise.url} />
+          </span></h5>
           {/* <Link to={`/back/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}

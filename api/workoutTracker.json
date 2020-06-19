@@ -219,7 +219,7 @@
       "height": "5'10\"",
       "weight": "160",
       "id": 2,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592518227/userImage/ywpotvqcmv317fh3pztm.jpg"
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592584159/userImage/igfummawlkgdx4j9l4vv.jpg"
     },
     {
       "name": "Brandy",
@@ -241,121 +241,14 @@
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592530470/userImage/khhemei6i163oh0rmlfo.jpg"
     },
     {
-      "name": "",
-      "username": "aa",
-      "password": "aa",
-      "age": "",
-      "height": "",
-      "weight": "",
+      "name": "Lucy",
+      "username": "Lucy",
+      "password": "123",
+      "age": "6",
+      "height": "1ft",
+      "weight": "10lb",
+      "gender": "F",
       "id": 5
-    },
-    {
-      "name": "",
-      "username": "ee",
-      "password": "ee",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "username": "ee",
-      "password": "ee",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "username": "cc",
-      "password": "cc",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 11
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 12
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 13
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 14
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 15
-    },
-    {
-      "name": "tt",
-      "username": "tt",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 16
-    },
-    {
-      "name": "",
-      "username": "",
-      "password": "",
-      "age": "",
-      "height": "",
-      "weight": "",
-      "id": 17
     }
   ],
   "muscles": [

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from 'reactstrap'
 import ApiManager from '../modules/ApiManager'
 import './Profile.css'
+
 
 
 export default function Profile(props) {
@@ -73,7 +75,7 @@ export default function Profile(props) {
       <p>Age: {user.age}</p>
       <p>Height: {user.height}</p>
       <p>Weight: {user.weight} lbs.</p>
-      <Link to="/login" className="" onClick={handleLogout}>Logout</Link>
+      <Link to="/login" onClick={handleLogout}><Button id="logout">Logout</Button></Link>
     </div>
   )
 }
