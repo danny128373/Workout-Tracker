@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 p {
   font-weight: bold;
 }
@@ -55,6 +56,7 @@ p {
 
 #username {
   margin-left: 7px;
+  margin-top: 50px;
 }
 
 #name {
@@ -154,11 +156,16 @@ label {
 
 #workoutLogContainer {
   margin-bottom: 96px;
+  margin-top: 147px;
+  background: #d5dde796;
 }
 
 #logoAppContainer {
   display: flex;
   justify-content: center;
+  background: white;
+  border-bottom: 3px solid #2c98d8;
+  padding-bottom: 15px;
 }
 
 .exerciseImages {
@@ -176,9 +183,14 @@ body {
 
 /* Logs */
 
-td, th {
+th {
   color: #2c98d8;
-  font-weight: bold;
+  font-family: 'Alatsi', sans-serif;
+}
+
+td {
+  color: black;
+  font-family: 'Alatsi', sans-serif;
 }
 
 .buttonContainer {
@@ -197,6 +209,25 @@ td, th {
   flex-direction: column;
 }
 
+.logTable {
+  border-bottom: 3px #2c98d8 solid;
+  border-top: 3px #2c98d8 solid;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 2em;
+  overflow: hidden;
+  margin-top: 13px;
+  box-shadow: 1px 5px #888888;
+}
+
+#muscleGroup {
+  color: #2c98d8;
+}
+
+#tableDate {
+  color: #2c98d8
+}
+
 /* Exercises */
 
 div.container img {
@@ -204,4 +235,28 @@ div.container img {
   border-style: none;
   width: 93%;
   margin-top: 18px;
+}
+
+/* Profile */
+
+#persistedProfileImage {
+  width: 350px;
+}
+
+#profileContainer img {
+  width: 350px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.labelFile {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 11px;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  color: white;
 }

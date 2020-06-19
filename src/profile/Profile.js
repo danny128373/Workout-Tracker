@@ -48,13 +48,17 @@ export default function Profile(props) {
 
   return (
     <div id="profileContainer">
-      <input
-        id="file"
-        type="file"
-        name="file"
-        placeholder="Upload Image"
-        onChange={uploadImage}
-      />
+      <label className="labelFile" htmlFor="file">
+        Upload New Profile
+        <input
+          id="file"
+          type="file"
+          name="file"
+          placeholder="Upload Image"
+          onChange={uploadImage}
+        />
+      </label>
+
       {isLoading ? (
         <h3>Loading...</h3>
       ) : (
