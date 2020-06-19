@@ -42,7 +42,7 @@ export default function Login(props) {
   return (
     <>
       <p className="banner">Login</p>
-      <img className="logo" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592494323/App_icon_864_x_864_sn65yw.png" />
+      <img className="logo" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
       <form className="loginForm">
         <fieldset className="usernameInLoginPage">
           <label htmlFor="username">Username:</label>

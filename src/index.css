@@ -6,12 +6,12 @@ p {
 
 .banner {
   font-size: 35px;
-  background-color: #f3ec78;
-  background-image: linear-gradient(#ffffff, #2285bc);
+  background-image: linear-gradient(to left, #86eae99e, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
   color: white;
   text-align: center;
   line-height: 200%;
   width: 100%;
+  margin-top: 43px;
 }
 
 #logoHome {
@@ -20,13 +20,15 @@ p {
 }
 
 #logoRegister {
-  width: 65%;
+  width: 49%;
   align-self: center;
+  margin-top: 37px;
 }
 
 .logo {
-  width: 65%;
+  width: 49%;
   align-self: center;
+  margin-top: 37px;
 }
 
 .homeContainer {
@@ -44,7 +46,7 @@ p {
 }
 
 #signInRegister {
-  background: #2c98d8;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
   margin-left: 103px;
   margin-top: 10px;
 }
@@ -87,8 +89,11 @@ p {
 }
 
 #loginButtonLoginPage {
-  background: #2c98d8;
-  margin-top: 1em;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  margin-top: .7em;
+  width: 138px;
+  height: 37px;
+  margin-left: 37px;
 }
 
 label {
@@ -96,19 +101,26 @@ label {
 }
 
 #createAccount {
-  background: #2c98d8;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  width: 208px;
+  margin-top: 14px;
+  margin-bottom: 26px;
 }
 
 #signInHome {
-  background: #2c98d8;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  width: 138px;
+  height: 37px;
+  margin-top: -10px;
 }
 
 .loginForm {
   text-align: center;
 }
 
-#username {
+#loginUsername {
   margin-left: 0.5em;
+  margin-top: 47px;
 }
 
 #password {
@@ -128,11 +140,12 @@ label {
 }
 
 .navLink {
-  width: 110%;
+  width: 93%;
 }
 
 #logoApp {
-  width: 200px;
+  width: 157px;
+  margin-top: 37px;
 }
 
 #profileContainer {
@@ -161,7 +174,34 @@ body {
   color: #2c98d8;
 }
 
+/* Logs */
+
 td, th {
   color: #2c98d8;
   font-weight: bold;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+#newWorkout {
+  margin-top: 144px;
+  font-size: xx-large;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+}
+
+#profileContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Exercises */
+
+div.container img {
+  vertical-align: middle;
+  border-style: none;
+  width: 93%;
+  margin-top: 18px;
 }
