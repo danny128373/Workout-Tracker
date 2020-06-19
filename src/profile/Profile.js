@@ -49,13 +49,6 @@ export default function Profile(props) {
   return (
     <div id="profileContainer">
 
-
-      {isLoading ? (
-        <h3>Loading...</h3>
-      ) : (
-          <img id="persistedProfileImage" src={image} />
-        )}
-
       <label className="labelFile" htmlFor="file">
         Upload New Profile
         <input
@@ -66,6 +59,12 @@ export default function Profile(props) {
           onChange={uploadImage}
         />
       </label>
+
+      {isLoading ? (
+        <h3>Loading...</h3>
+      ) : (
+          <img id="persistedProfileImage" src={image} />
+        )}
 
       {!isUploading ?
         < img src={user.url} />
