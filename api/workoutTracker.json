@@ -187,6 +187,17 @@
       "notes": "",
       "userId": 4,
       "id": 6
+    },
+    {
+      "date": "2020-06-19",
+      "muscles": [
+        "Biceps, Forearms, and Back"
+      ],
+      "notes": [
+        "Felt tired"
+      ],
+      "userId": 2,
+      "id": 7
     }
   ],
   "users": [
@@ -226,7 +237,8 @@
       "age": "aa",
       "height": "aa",
       "weight": "aa",
-      "id": 4
+      "id": 4,
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592530470/userImage/khhemei6i163oh0rmlfo.jpg"
     },
     {
       "name": "",
@@ -468,6 +480,22 @@
       "workoutLogId": 5,
       "userId": 2,
       "id": 10
+    },
+    {
+      "name": "Bicep Curls",
+      "reps": "8",
+      "weight": "35",
+      "workoutLogId": 7,
+      "userId": 2,
+      "id": 11
+    },
+    {
+      "name": "Deadlifts",
+      "reps": "8",
+      "weight": "205",
+      "workoutLogId": 7,
+      "userId": 2,
+      "id": 12
     }
   ],
   "muscleExercises": [

@@ -27,16 +27,16 @@ export default function WorkoutLogList(props) {
     <>
       {workouts.reverse().map(workout => {
         return (
-          <Table key={workout.id}>
+          <Table className="logTable" key={workout.id}>
             <thead>
               <tr>
-                <td>{dateFormatter(workout.date)}</td>
-                <td colSpan="3">Muscle(s) Trained: {workout.muscles[0]}</td>
+                <td id="tableDate">{dateFormatter(workout.date)}</td>
+                <td colSpan="3"><div id="muscleGroup">Muscle Group:</div> {workout.muscles[0]}</td>
               </tr>
 
               <tr>
-                <th>Set #</th>
-                <th>Exercise Name</th>
+                <th>Set</th>
+                <th>Exercise</th>
                 <th>Reps</th>
                 <th>Weight</th>
               </tr>

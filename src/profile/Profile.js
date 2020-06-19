@@ -48,18 +48,24 @@ export default function Profile(props) {
 
   return (
     <div id="profileContainer">
-      <input
-        id="file"
-        type="file"
-        name="file"
-        placeholder="Upload Image"
-        onChange={uploadImage}
-      />
+
+
       {isLoading ? (
         <h3>Loading...</h3>
       ) : (
           <img id="persistedProfileImage" src={image} />
         )}
+
+      <label className="labelFile" htmlFor="file">
+        Upload New Profile
+        <input
+          id="file"
+          type="file"
+          name="file"
+          placeholder="Upload Image"
+          onChange={uploadImage}
+        />
+      </label>
 
       {!isUploading ?
         < img src={user.url} />
