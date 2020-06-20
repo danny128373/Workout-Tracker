@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'reactstrap'
 import './Muscle.css'
 
-export default function MuscleList() {
+export default function MuscleList(props) {
   return (
     <>
       <Container>

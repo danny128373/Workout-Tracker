@@ -32,13 +32,20 @@ export default function WorkoutLogList(props) {
       setSearchResults(stateToChange)
     })
   }
-
+  //refactor by filtering searchResults and not call every key stroke by user
   useEffect(getWorkoutLogs, [])
   useEffect(getExercises, [userInput])
 
   return (
     <>
-      <input id="searchExercises" onKeyUp={handleUserInput} type="text" placeholder="Search by exercise name..." />
+
+      <div id="searchContainer" className="form-group has-search">
+        <div id="withinSearchContainer">
+          <span id="searchIcon" class="fa fa-search form-control-feedback"></span>
+          <input id="searchExercises" className="form-control" onKeyUp={handleUserInput} type="text" placeholder="Exercise Name" />
+        </div>
+      </div>
+
       {userInput.input ?
         <Table className="logTable">
           <thead>
@@ -68,7 +75,6 @@ export default function WorkoutLogList(props) {
                   <td id="tableDate">{dateFormatter(workout.date)}</td>
                   <td colSpan="3"><div id="muscleGroup">Muscle Group:</div> {workout.muscles[0]}</td>
                 </tr>
-
                 <tr>
                   <th>Set</th>
                   <th>Exercise</th>

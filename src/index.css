@@ -240,11 +240,19 @@ td {
 
 input#searchExercises {
   border-radius: 5px;
-  margin-left: 80px;
-  margin-top: 12px;
-  padding: 5px;
-  width: 200px;
+  margin-left: 6px;
+  margin-top: 0px;
+  padding-left: 41px;
+  width: 347px;
   box-shadow: 1px 1px #888888;
+}
+
+#searchIcon {
+  margin-left: 12px;
+}
+
+#withinSearchContainer {
+  padding-top: 10px;
 }
 
 /* Exercises */
@@ -298,4 +306,20 @@ input[type="file"] {
 .card-content {
   display: flex;
   text-align: left;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
 }

@@ -129,6 +129,16 @@
       "id": 26,
       "name": "Cable Decline Pullover",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591905467/3036_jtls9l.jpg"
+    },
+    {
+      "name": "Decline Bench Press",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419799/6_1_m9hl0v.png",
+      "id": 27
+    },
+    {
+      "name": "Dumbbell Overhead Press",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419725/3_1_sdztok.png",
+      "id": 28
     }
   ],
   "workoutLogs": [
@@ -559,6 +569,16 @@
       "id": 26,
       "exerciseId": 26,
       "muscleId": 9
+    },
+    {
+      "exerciseId": 27,
+      "muscleId": 6,
+      "id": 27
+    },
+    {
+      "exerciseId": 28,
+      "muscleId": 9,
+      "id": 28
     }
   ]
 }
