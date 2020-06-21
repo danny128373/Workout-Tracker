@@ -144,6 +144,11 @@
       "name": "Close-grip Bench press",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419829/10_1_mb1ajn.png",
       "id": 29
+    },
+    {
+      "name": "Tricep Extensions",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419829/10_1_mb1ajn.png",
+      "id": 30
     }
   ],
   "workoutLogs": [
@@ -184,46 +189,6 @@
       ],
       "userId": 2,
       "id": 4
-    },
-    {
-      "date": "2020-05-20",
-      "muscles": [
-        "Calves"
-      ],
-      "notes": [
-        "Ate well that day and it shows!"
-      ],
-      "userId": 2,
-      "id": 5
-    },
-    {
-      "date": "",
-      "muscles": "",
-      "notes": "",
-      "userId": 4,
-      "id": 6
-    },
-    {
-      "date": "2020-06-19",
-      "muscles": [
-        "Biceps, Forearms, and Back"
-      ],
-      "notes": [
-        "Felt tired"
-      ],
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "date": "2020-06-20",
-      "muscles": [
-        "Chest"
-      ],
-      "notes": [
-        "Felt great!"
-      ],
-      "userId": 2,
-      "id": 8
     }
   ],
   "users": [
@@ -246,35 +211,6 @@
       "weight": "160",
       "id": 2,
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
-    },
-    {
-      "name": "Brandy",
-      "username": "brandy@gmail.com",
-      "password": "123",
-      "age": "30",
-      "height": "5'6\"",
-      "weight": "180",
-      "id": 3
-    },
-    {
-      "name": "aa",
-      "username": "aa",
-      "password": "aa",
-      "age": "aa",
-      "height": "aa",
-      "weight": "aa",
-      "id": 4,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592530470/userImage/khhemei6i163oh0rmlfo.jpg"
-    },
-    {
-      "name": "Lucy",
-      "username": "Lucy",
-      "password": "123",
-      "age": "6",
-      "height": "1ft",
-      "weight": "10lb",
-      "gender": "F",
-      "id": 5
     }
   ],
   "muscles": [
@@ -394,54 +330,6 @@
       "workoutLogId": 4,
       "userId": 2,
       "id": 8
-    },
-    {
-      "name": "Barbell Calf Raises",
-      "reps": "12",
-      "weight": "185",
-      "workoutLogId": 5,
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "name": "Dumbbell Calf Raises",
-      "reps": "5",
-      "weight": "225",
-      "workoutLogId": 5,
-      "userId": 2,
-      "id": 10
-    },
-    {
-      "name": "Bicep Curls",
-      "reps": "8",
-      "weight": "35",
-      "workoutLogId": 7,
-      "userId": 2,
-      "id": 11
-    },
-    {
-      "name": "Deadlifts",
-      "reps": "8",
-      "weight": "205",
-      "workoutLogId": 7,
-      "userId": 2,
-      "id": 12
-    },
-    {
-      "name": "Bench Press",
-      "reps": "8",
-      "weight": "135",
-      "workoutLogId": 8,
-      "userId": 2,
-      "id": 13
-    },
-    {
-      "name": "Push ups",
-      "reps": "20 ",
-      "weight": "0",
-      "workoutLogId": 8,
-      "userId": 2,
-      "id": 14
     }
   ],
   "muscleExercises": [
@@ -589,12 +477,29 @@
       "exerciseId": 29,
       "muscleId": 10,
       "id": 29
+    },
+    {
+      "exerciseId": 30,
+      "muscleId": 10,
+      "id": 30
     }
   ],
   "routines": [
     {
       "id": 1,
       "name": "Chest and Triceps"
+    },
+    {
+      "id": 2,
+      "name": "Back, Biceps, and Forearms"
+    },
+    {
+      "id": 2,
+      "name": "Shoulders and Legs"
+    },
+    {
+      "id": 4,
+      "name": "Abs"
     }
   ],
   "routineExercises": [
@@ -633,6 +538,12 @@
       "exerciseId": 29,
       "muscleId": 10,
       "routineId": 1
+    },
+    {
+      "routineId": 1,
+      "muscleId": 10,
+      "exerciseId": 30,
+      "id": 7
     }
   ]
 }

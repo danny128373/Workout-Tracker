@@ -1,53 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import ApiManager from "../modules/ApiManager"
 import { Button } from 'reactstrap'
 
 export default function Routine1(props) {
-  // const [exercises, setExercises] = useState({ chest: [], triceps: [] })
-
-  // const getExercises = () => {
-  //   const stateToChange = { ...exercises }
-  //   ApiManager.getAllExercises(6).then(chestExercises => {
-  //     stateToChange.chest = chestExercises
-  //   }).then(e => {
-  //     ApiManager.getAllExercises(10).then(tricepExercises => {
-  //       stateToChange.triceps = tricepExercises
-  //       setExercises(stateToChange)
-  //     })
-  //   })
-  // }
-
-  // useEffect(getExercises, [])
-
-  // const deleteFromRoutine = () => {
-  //   ApiManager.delete('routineExercises', )
-  // }
-
-  // return (
-  //   <div>
-  //     {exercises.chest.map(exercise => {
-  //       return (
-  //         <div key={exercise.id}>
-  //           <img className="routineImages" src={exercise.exercise.url} />
-  //           <p>{exercise.exercise.name}</p>
-  //           <p>Rest time: 2-3 mins</p>
-  //           {/* add delete button(trashcan icon) */}
-  //           <Button onClick={deleteFromRoutine}>Delete</Button>
-  //         </div>
-  //       )
-  //     })}
-  //     {exercises.triceps.map(exercise => {
-  //       return (
-  //         <div key={exercise.id}>
-  //           <img className="routineImages" src={exercise.exercise.url} />
-  //           <p>{exercise.exercise.name}</p>
-  //           <p>Rest time: 2-3 mins</p>
-  //         </div>
-  //       )
-  //     })}
-
-  //   </div>
-  //)
 
   const [exercises, setExercises] = useState([])
 
@@ -60,7 +16,7 @@ export default function Routine1(props) {
   useEffect(getExercises, [])
 
   return (
-    <div>
+    <>
       {exercises.map(exercise => {
         return (
           <div id={`${exercise.id}`} key={exercise.id}>
@@ -75,6 +31,14 @@ export default function Routine1(props) {
           </div>
         )
       })}
-    </div>
+      <div id="routine1addNew">
+        <Link to="/addExercise"><Button>Add New Exercise</Button></Link>
+      </div>
+      <div id="startWorkout">
+        {/* <Link to="/enterNewLinkOnceCreated"> */}
+        <Button>Start Workout</Button>
+        {/* </Link> */}
+      </div>
+    </>
   )
 }

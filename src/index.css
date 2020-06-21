@@ -264,6 +264,10 @@ div.container img {
   margin-top: 18px;
 }
 
+.container {
+  width: 97%;
+}
+
 /* Profile */
 
 #persistedProfileImage {
@@ -324,7 +328,13 @@ input[type="file"] {
   color: #aaa;
 }
 
+/* Routine 1 */
+
 .routineImages {
   width: 35%;
   border-radius: 150px;
+}
+
+#startWorkout {
+  margin-bottom: 106px;
 }
