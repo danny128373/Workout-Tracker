@@ -37,5 +37,13 @@ export default {
   searchLogs(userInput, id) {
     return fetch(`${remoteURL}/sets?_expand=workoutLog&name_like=${userInput}&userId=${id}`)
       .then(e => e.json())
+  },
+  delete(collection, id) {
+    return fetch(`${remoteURL}/${collection}/${id}`, {
+      method: "DELETE"
+    }).then(e => e.json())
+  },
+  getRoutineExercises(routineId) {
+    return fetch(`${remoteURL}/routineExercises?_expand=muscle&_expand=exercise&routineId=${routineId}`).then(data => data.json())
   }
 }

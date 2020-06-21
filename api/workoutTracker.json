@@ -591,6 +591,48 @@
       "id": 29
     }
   ],
-  "routines": [],
-  "routineExercises": []
+  "routines": [
+    {
+      "id": 1,
+      "name": "Chest and Triceps"
+    }
+  ],
+  "routineExercises": [
+    {
+      "id": 1,
+      "exerciseId": 1,
+      "muscleId": 6,
+      "routineId": 1
+    },
+    {
+      "id": 2,
+      "exerciseId": 2,
+      "muscleId": 6,
+      "routineId": 1
+    },
+    {
+      "id": 3,
+      "exerciseId": 27,
+      "muscleId": 6,
+      "routineId": 1
+    },
+    {
+      "id": 4,
+      "exerciseId": 19,
+      "muscleId": 10,
+      "routineId": 1
+    },
+    {
+      "id": 5,
+      "exerciseId": 20,
+      "muscleId": 10,
+      "routineId": 1
+    },
+    {
+      "id": 6,
+      "exerciseId": 29,
+      "muscleId": 10,
+      "routineId": 1
+    }
+  ]
 }

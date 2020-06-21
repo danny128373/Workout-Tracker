@@ -323,3 +323,8 @@ input[type="file"] {
   pointer-events: none;
   color: #aaa;
 }
+
+.routineImages {
+  width: 35%;
+  border-radius: 150px;
+}
