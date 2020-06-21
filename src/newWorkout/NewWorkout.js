@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ApiManager from '../modules/ApiManager'
 import { Button } from 'reactstrap'
 import './NewWorkout.css'
+
 
 export default function NewWorkout(props) {
 
@@ -9,6 +11,7 @@ export default function NewWorkout(props) {
   const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
   const [session, setSession] = useState({ date: "", muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
+  const [routine1, setRoutine1] = useState(false)
 
   const handleSessionChange = (event) => {
     setSession({ ...session, [event.target.name]: [event.target.value], })
@@ -46,6 +49,7 @@ export default function NewWorkout(props) {
   const addWorkoutHandler = (event) => {
     setIsShown(false)
   }
+
 
   return (
     <>
@@ -128,6 +132,14 @@ export default function NewWorkout(props) {
           <br />
           <Button id="workoutButton" onClick={onSubmitHandler} >Submit Workout Log</Button>
         </form>
+        : null}
+      {isShown ?
+        <>
+          <Link to="/routine1"><Button>Chest and Triceps</Button></Link>
+          <Button>Back, Biceps, and Forearms</Button>
+          <Button>Shoulders and Legs</Button>
+          <Button>Abs</Button>
+        </>
         : null}
     </>
   )

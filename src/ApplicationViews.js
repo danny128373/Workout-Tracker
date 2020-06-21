@@ -19,6 +19,7 @@ import WorkoutLogList from './workoutLog/WorkoutLogList'
 import Register from './auth/Register'
 import Home from './home/Home'
 import ExerciseForm from './muscle/ExerciseForm'
+import Routine1 from './routine/Routine1'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
@@ -85,6 +86,9 @@ export default function ApplicationViews(props) {
       }} />
       <Route exact path="/addExercise" render={(props) => {
         return <ExerciseForm {...props} />
+      }} />
+      <Route exact path="/routine1" render={(props) => {
+        return <Routine1 {...props} />
       }} />
     </>
   )
