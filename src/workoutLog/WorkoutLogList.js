@@ -41,7 +41,7 @@ export default function WorkoutLogList(props) {
 
       <div id="searchContainer" className="form-group has-search">
         <div id="withinSearchContainer">
-          <span id="searchIcon" class="fa fa-search form-control-feedback"></span>
+          <span id="searchIcon" className="fa fa-search form-control-feedback"></span>
           <input id="searchExercises" className="form-control" onKeyUp={handleUserInput} type="text" placeholder="Exercise Name" />
         </div>
       </div>
@@ -85,8 +85,8 @@ export default function WorkoutLogList(props) {
               <tbody>
                 {workout.sets.map((set, index) => {
                   return (
-                    <tr>
-                      <td key={set.id}>
+                    <tr key={set.id} >
+                      <td >
                         {`${index + 1} `}
                       </td>
                       <td>
