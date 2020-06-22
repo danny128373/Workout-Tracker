@@ -75,6 +75,7 @@ export default function Profile(props) {
       <p>Age: {user.age}</p>
       <p>Height: {user.height}</p>
       <p>Weight: {user.weight} lbs.</p>
+      <Link to={`/users/${JSON.parse(sessionStorage.getItem('credentials'))[0].id}/edit`}><Button>Edit Profile</Button></Link>
       <Link to="/login" onClick={handleLogout}><Button id="logout">Logout</Button></Link>
     </div>
   )

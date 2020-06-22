@@ -25,6 +25,7 @@ import AbsDetails from './muscle/abs/AbsDetails'
 import ChestDetails from './muscle/chest/ChestDetails'
 import ForearmsDetails from './muscle/forearms/ForearmsDetails'
 import BackDetails from './muscle/back/BackDetails'
+import ProfileEditForm from './profile/ProfileEditForm'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
@@ -109,6 +110,12 @@ export default function ApplicationViews(props) {
       }} />
       <Route path="/back/:exerciseId(\d+)" render={props => {
         return <BackDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
+      }} />
+      <Route path="/back/:exerciseId(\d+)" render={props => {
+        return <BackDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
+      }} />
+      <Route path="/users/:userId(\d+)/edit" render={props => {
+        return <ProfileEditForm {...props} />
       }} />
     </>
   )

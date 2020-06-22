@@ -101,7 +101,10 @@ export default function WorkoutLogList(props) {
                     </tr>
                   )
                 })}
-
+                <tr>
+                  <td>Notes:</td>
+                  <td colSpan="3"><div id="workoutNotesLog"></div> {workout.notes[0]}</td>
+                </tr>
               </tbody>
 
             </Table>
