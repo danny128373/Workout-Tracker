@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function CalvesCard(props) {
   return (
     <>
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span>
+          <img className="exerciseImages" alt="calves exercise" src={props.exercise.exercise.url} />
+          <h5><span>
             {props.exercise.exercise.name}
-          </span></h3>
-          <img alt="calves exercise" src={props.exercise.exercise.url} />
-          {/* <Link to={`/abs/${props.ab.id}`}>
+          </span></h5>
+          <Link to={`/forearms/${props.exercise.exercise.id}`}>
             <button>Details</button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </>

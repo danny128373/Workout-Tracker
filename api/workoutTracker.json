@@ -2,28 +2,32 @@
   "exercises": [
     {
       "id": 1,
-      "name": "Bench press",
+      "name": "Barbell Bench press",
+      "description": "Steps :<p>1.) Lie with your back flat on a bench with your feet firmly on the ground and the bar resting on the bench’s rack.</p><p>2.) Slowly lift the bar off the rack and hold it above your chest as this will be the starting position.</p><p>3.) Then lower the bar down until it is slightly above your chest, making sure that it doesn't touch or slam against your chest.</p><p>4.) Hold this position briefly and make sure you have complete control of the bar, then raise it back up to the starting postion.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591902686/8_anojap.jpg"
     },
     {
       "id": 2,
       "name": "Band Cross Over",
+      "description": "Steps :<p>1.) Take a resistance band and wrap it around a straight pole or the post of an exercise machine. Keeping the band at around chest level, face away from the post and hold the handles in each hand, spreading them out to your sides.</p><p>2.) Once you have wrapped the band around the pole, step back until you feel resistance, standing with your feet shoulder-width apart, and keep your knees bent and abs tight.</p><p>3.) To perform the exercise, slowly allow your hands to come in towards each other, keeping your arms extended out in front of you, until you feel a stretch in your chest.</p><p>4.) Hold this position for a few seconds then return back to the starting position with your hands extended out and handles spread out at your sides.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903349/4_xvofhh.jpg"
     },
     {
       "id": 3,
       "name": "Barbell Behind The Back Wrist Curl",
+      "description": "Steps :<p>1.) Stand with your feet shoulders width apart.</p><p>2.) Grasp the barbell in your hands with your palms facing outwards.</p><p>3.) Lift the barbell up and down using only your hands while keeping your arms straight.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903496/468_ryf3qf.jpg"
     },
     {
       "id": 4,
       "name": "Barbell Reverse Curl",
+      "description": "Steps :<p>1.) Stand with your feet shoulders width apart.</p><p>2.) Bending at the knees pick up barbell.</p><p>3.) With your palms facing downward lift the barbell to your chest while remaining up straight.</p><p>4.) Do not bend your upper arms but bend only at your elbows, with your forearms moving.</p><p>5.) Keep your wrist straight while raising and lowering the barbell.</p><p>6.) Repeat for the desired amount of reps.</p><p>7.) After the set bend at your knees to set the barbell down.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903614/444_a9q4hb.jpg"
     },
     {
       "id": 5,
       "name": "Ab Crunch Machine",
-      "description": "Steps :<p>1.) Sit down in the machine and select a resistance that is with-in safe limits of your ability.</p><p>2.) Do a crunch in a slow controlled manner while slowly breathing out.</p><p>3.) Pause at the bottom of your crunch for 3 seconds.</p><p>4.) Return to your starting position in a slow controlled movement.</p>",
+      "description": "Steps :<p>1.) Sit down in the machine and select a resistance that is within safe limits of your ability.</p><p>2.) Do a crunch in a slow controlled manner while slowly breathing out.</p><p>3.) Pause at the bottom of your crunch for 3 seconds.</p><p>4.) Return to your starting position in a slow controlled movement.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903656/224_jxt7zd.jpg"
     },
     {
@@ -35,6 +39,7 @@
     {
       "id": 7,
       "name": "Band Good Morning",
+      "description": "",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903877/1864_u9jtop.jpg"
     },
     {
@@ -75,11 +80,13 @@
     {
       "id": 15,
       "name": "Barbell Bent Over Row",
+      "description": "Steps :<p>1.) Start off with resting a barbell just behind your shoulders and standing up straight with your feet shoulder width apart and abs tight to support your back.</p><p>2.) Once in position start leaning forward, lowering your torso until it is parallel to the ground and knees slightly bent.</p><p>3.) When your body is parallel to the ground, stop and hold the position for a count while looking forward then return back to the starting position and repeat for as many reps and sets as desired.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591904642/12_g4sxxz.jpg"
     },
     {
       "id": 16,
       "name": "Barbell Deadlift",
+      "description": "Steps :<p>1.) Start off standing in front of a barbell with your feet shoulder-width apart.</p><p>2.) Pick up the barbell while keeping your arms extended straight down.</p><p>3.) Stand up straight with the barbell in your hands, and refrain from moving your arms.</p><p>4.) Bend back down at the knees with barbell.</p><p>5.) Repeat for the desired amount of reps.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591904711/372_n9ytot.jpg"
     },
     {
@@ -151,6 +158,11 @@
       "name": "Tricep Extensions",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419829/10_1_mb1ajn.png",
       "id": 30
+    },
+    {
+      "name": "Cable crossovers",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419799/6_1_m9hl0v.png",
+      "id": 31
     }
   ],
   "workoutLogs": [
@@ -191,6 +203,28 @@
       ],
       "userId": 2,
       "id": 4
+    },
+    {
+      "date": "2020-06-23",
+      "muscles": [
+        "Chest and Triceps"
+      ],
+      "notes": [
+        "It was great!"
+      ],
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "date": "2020-06-23",
+      "muscles": [
+        "Biceps"
+      ],
+      "notes": [
+        "Felt sick after too much preworkout"
+      ],
+      "userId": 2,
+      "id": 6
     }
   ],
   "users": [
@@ -213,6 +247,17 @@
       "weight": "160",
       "id": 2,
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
+    },
+    {
+      "name": "Bryan",
+      "username": "bryan",
+      "password": "bryan",
+      "age": "21",
+      "height": "6'5\"",
+      "weight": "215",
+      "gender": "M",
+      "id": 3,
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592853690/userImage/gcwhmcwb04xq9o5qn2yy.jpg"
     }
   ],
   "muscles": [
@@ -332,6 +377,46 @@
       "workoutLogId": 4,
       "userId": 2,
       "id": 8
+    },
+    {
+      "name": "Barbell Bench Press",
+      "reps": "8",
+      "weight": "135",
+      "workoutLogId": 5,
+      "userId": 3,
+      "id": 9
+    },
+    {
+      "name": "Skullcrushers",
+      "reps": "8",
+      "weight": "60",
+      "workoutLogId": 5,
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "name": "Dumbbell Curls",
+      "reps": "8",
+      "weight": "30",
+      "workoutLogId": 6,
+      "userId": 2,
+      "id": 11
+    },
+    {
+      "name": "Barbell Curls",
+      "reps": "10",
+      "weight": "45",
+      "workoutLogId": 6,
+      "userId": 2,
+      "id": 12
+    },
+    {
+      "name": "",
+      "reps": "",
+      "weight": "",
+      "workoutLogId": "",
+      "userId": 2,
+      "id": 13
     }
   ],
   "muscleExercises": [
@@ -484,6 +569,11 @@
       "exerciseId": 30,
       "muscleId": 10,
       "id": 30
+    },
+    {
+      "exerciseId": 31,
+      "muscleId": 6,
+      "id": 31
     }
   ],
   "routines": [
@@ -505,12 +595,6 @@
     }
   ],
   "routineExercises": [
-    {
-      "id": 1,
-      "exerciseId": 1,
-      "muscleId": 6,
-      "routineId": 1
-    },
     {
       "id": 2,
       "exerciseId": 2,

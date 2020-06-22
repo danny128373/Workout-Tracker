@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BackCard(props) {
   return (
@@ -9,9 +10,9 @@ export default function BackCard(props) {
           <h5><span>
             {props.back.exercise.name}
           </span></h5>
-          {/* <Link to={`/back/${props.ab.id}`}>
+          <Link to={`/back/${props.back.exercise.id}`}>
             <button>Details</button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </>
