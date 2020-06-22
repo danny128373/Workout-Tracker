@@ -211,6 +211,22 @@ td {
   background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
 }
 
+form#containerNewWorkout {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+form#containerNewWorkout .set {
+  align-self: center;
+}
+
+#setButton, #workoutButton {
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  align-self: center;
+  width: 240px;
+}
+
 #profileContainer {
   display: flex;
   align-items: center;

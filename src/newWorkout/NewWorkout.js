@@ -58,7 +58,7 @@ export default function NewWorkout(props) {
         </div>
         : null}
       {!isShown ?
-        <form>
+        <form id="containerNewWorkout">
           <label htmlFor="date">Date: </label>
           <input onChange={handleDate} id="date" type="date" />
           <br />
@@ -79,7 +79,7 @@ export default function NewWorkout(props) {
               const weightId = `weight-${idx}`
               return (
                 <div className="set" key={`set-${idx}`}>
-                  <label htmlFor={setId}>{`Set #${idx + 1}`}</label>
+                  <div>{`Set #${idx + 1}`}</div>
                   <input
                     type="text"
                     name={setId}
