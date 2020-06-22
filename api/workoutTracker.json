@@ -2,28 +2,32 @@
   "exercises": [
     {
       "id": 1,
-      "name": "Bench press",
+      "name": "Barbell Bench press",
+      "description": "Steps :<p>1.) Lie with your back flat on a bench with your feet firmly on the ground and the bar resting on the bench’s rack.</p><p>2.) Slowly lift the bar off the rack and hold it above your chest as this will be the starting position.</p><p>3.) Then lower the bar down until it is slightly above your chest, making sure that it doesn't touch or slam against your chest.</p><p>4.) Hold this position briefly and make sure you have complete control of the bar, then raise it back up to the starting postion.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591902686/8_anojap.jpg"
     },
     {
       "id": 2,
       "name": "Band Cross Over",
+      "description": "Steps :<p>1.) Take a resistance band and wrap it around a straight pole or the post of an exercise machine. Keeping the band at around chest level, face away from the post and hold the handles in each hand, spreading them out to your sides.</p><p>2.) Once you have wrapped the band around the pole, step back until you feel resistance, standing with your feet shoulder-width apart, and keep your knees bent and abs tight.</p><p>3.) To perform the exercise, slowly allow your hands to come in towards each other, keeping your arms extended out in front of you, until you feel a stretch in your chest.</p><p>4.) Hold this position for a few seconds then return back to the starting position with your hands extended out and handles spread out at your sides.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903349/4_xvofhh.jpg"
     },
     {
       "id": 3,
       "name": "Barbell Behind The Back Wrist Curl",
+      "description": "Steps :<p>1.) Stand with your feet shoulders width apart.</p><p>2.) Grasp the barbell in your hands with your palms facing outwards.</p><p>3.) Lift the barbell up and down using only your hands while keeping your arms straight.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903496/468_ryf3qf.jpg"
     },
     {
       "id": 4,
       "name": "Barbell Reverse Curl",
+      "description": "Steps :<p>1.) Stand with your feet shoulders width apart.</p><p>2.) Bending at the knees pick up barbell.</p><p>3.) With your palms facing downward lift the barbell to your chest while remaining up straight.</p><p>4.) Do not bend your upper arms but bend only at your elbows, with your forearms moving.</p><p>5.) Keep your wrist straight while raising and lowering the barbell.</p><p>6.) Repeat for the desired amount of reps.</p><p>7.) After the set bend at your knees to set the barbell down.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903614/444_a9q4hb.jpg"
     },
     {
       "id": 5,
       "name": "Ab Crunch Machine",
-      "description": "Steps :<p>1.) Sit down in the machine and select a resistance that is with-in safe limits of your ability.</p><p>2.) Do a crunch in a slow controlled manner while slowly breathing out.</p><p>3.) Pause at the bottom of your crunch for 3 seconds.</p><p>4.) Return to your starting position in a slow controlled movement.</p>",
+      "description": "Steps :<p>1.) Sit down in the machine and select a resistance that is within safe limits of your ability.</p><p>2.) Do a crunch in a slow controlled manner while slowly breathing out.</p><p>3.) Pause at the bottom of your crunch for 3 seconds.</p><p>4.) Return to your starting position in a slow controlled movement.</p>",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1591903656/224_jxt7zd.jpg"
     },
     {

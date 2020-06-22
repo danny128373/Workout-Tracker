@@ -5,10 +5,10 @@ export default function CalvesCard(props) {
     <>
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span>
+          <img className="exerciseImages" src={props.exercise.exercise.url} />
+          <h5><span>
             {props.exercise.exercise.name}
-          </span></h3>
-          <img src={props.exercise.exercise.url} />
+          </span></h5>
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}

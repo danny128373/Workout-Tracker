@@ -22,6 +22,8 @@ import ExerciseForm from './muscle/ExerciseForm'
 import Routine1 from './routine/Routine1'
 import StartWorkout from './routine/StartWorkout'
 import AbsDetails from './muscle/abs/AbsDetails'
+import ChestDetails from './muscle/chest/ChestDetails'
+import ForearmsDetails from './muscle/forearms/ForearmsDetails'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
@@ -97,6 +99,12 @@ export default function ApplicationViews(props) {
       }} />
       <Route path="/abs/:exerciseId(\d+)" render={props => {
         return <AbsDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
+      }} />
+      <Route path="/chest/:exerciseId(\d+)" render={props => {
+        return <ChestDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
+      }} />
+      <Route path="/forearms/:exerciseId(\d+)" render={props => {
+        return <ForearmsDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
       }} />
     </>
   )
