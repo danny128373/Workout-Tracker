@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AbsCard(props) {
   return (
@@ -9,9 +10,9 @@ export default function AbsCard(props) {
           <h5><span>
             {props.ab.exercise.name}
           </span></h5>
-          {/* <Link to={`/abs/${props.ab.id}`}>
+          <Link to={`abs/${props.ab.exercise.id}`}>
             <button>Details</button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </>

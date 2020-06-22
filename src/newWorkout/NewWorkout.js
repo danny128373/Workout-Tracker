@@ -11,7 +11,6 @@ export default function NewWorkout(props) {
   const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
   const [session, setSession] = useState({ date: "", muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
-  const [routine1, setRoutine1] = useState(false)
 
   const handleSessionChange = (event) => {
     setSession({ ...session, [event.target.name]: [event.target.value], })
@@ -75,9 +74,9 @@ export default function NewWorkout(props) {
 
           {
             set.map((val, idx) => {
-              const setId = `name-${idx}`;
-              const repsId = `reps-${idx}`;
-              const weightId = `weight-${idx}`;
+              const setId = `name-${idx}`
+              const repsId = `reps-${idx}`
+              const weightId = `weight-${idx}`
               return (
                 <div className="set" key={`set-${idx}`}>
                   <label htmlFor={setId}>{`Set #${idx + 1}`}</label>

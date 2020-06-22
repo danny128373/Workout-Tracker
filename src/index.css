@@ -338,3 +338,37 @@ input[type="file"] {
 #startWorkout {
   margin-bottom: 106px;
 }
+
+/* Start Routine */
+
+.startRoutine {
+  text-align: center;
+  margin-bottom: 117px;
+}
+
+.startRoutine img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+  border-radius: 142px;
+}
+
+.startRoutine input {
+  max-width: 20%;
+  margin: 0 8px;
+}
+
+/* ExerciseDetails */
+
+.exerciseDetailsContainer img {
+  max-width: 100%;
+  border-radius: 150px;
+}
+
+.exerciseDetailsContainer {
+  margin-bottom: 1px;
+}
+
+.exerciseDetailsDescription p:last-child {
+  margin-bottom: 98px;
+}
