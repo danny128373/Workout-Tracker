@@ -22,7 +22,7 @@ export default function Routine1(props) {
           <div id={`${exercise.id}`} key={exercise.id}>
             <img className="routineImages" src={exercise.exercise.url} />
             <p>{exercise.exercise.name}</p>
-            <p>Rest time: 2-3 mins</p>
+            <p>Rest time: 90 secs</p>
             <Button onClick={() => {
               ApiManager.delete('routineExercises', exercise.id).then(e => {
                 getExercises()
@@ -35,9 +35,9 @@ export default function Routine1(props) {
         <Link to="/addExercise"><Button>Add New Exercise</Button></Link>
       </div>
       <div id="startWorkout">
-        {/* <Link to="/enterNewLinkOnceCreated"> */}
-        <Button>Start Workout</Button>
-        {/* </Link> */}
+        <Link to="/startRoutine1">
+          <Button>Start Workout</Button>
+        </Link>
       </div>
     </>
   )
