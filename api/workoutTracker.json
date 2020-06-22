@@ -243,8 +243,8 @@
       "username": "bb",
       "password": "bb",
       "age": "30",
-      "height": "5'10\"",
-      "weight": "160",
+      "height": "5'11\"",
+      "weight": "170",
       "id": 2,
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
     },
@@ -595,6 +595,12 @@
     }
   ],
   "routineExercises": [
+    {
+      "id": 1,
+      "exerciseId": 1,
+      "muscleId": 6,
+      "routineId": 1
+    },
     {
       "id": 2,
       "exerciseId": 2,

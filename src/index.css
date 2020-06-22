@@ -315,6 +315,15 @@ input[type="file"] {
   background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
 }
 
+#profileEdit {
+  margin-top: 170px;
+  text-align: center;
+}
+
+#profileEditSubmitButton {
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+}
+
 /* this keeps messing up, keep an eye on it */
 
 .workoutContainer {
