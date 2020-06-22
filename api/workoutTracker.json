@@ -205,26 +205,15 @@
       "id": 4
     },
     {
-      "date": "2020-06-23",
+      "date": "2020-06-29",
       "muscles": [
         "Chest and Triceps"
       ],
       "notes": [
-        "It was great!"
-      ],
-      "userId": 3,
-      "id": 5
-    },
-    {
-      "date": "2020-06-23",
-      "muscles": [
-        "Biceps"
-      ],
-      "notes": [
-        "Felt sick after too much preworkout"
+        "Did supersets with Bench press and cable crossovers."
       ],
       "userId": 2,
-      "id": 6
+      "id": 5
     }
   ],
   "users": [
@@ -383,40 +372,64 @@
       "reps": "8",
       "weight": "135",
       "workoutLogId": 5,
-      "userId": 3,
+      "userId": 2,
       "id": 9
     },
     {
-      "name": "Skullcrushers",
-      "reps": "8",
-      "weight": "60",
+      "name": "Cable Crossovers",
+      "reps": "10",
+      "weight": "30",
       "workoutLogId": 5,
-      "userId": 3,
+      "userId": 2,
       "id": 10
     },
     {
-      "name": "Dumbbell Curls",
-      "reps": "8",
-      "weight": "30",
-      "workoutLogId": 6,
+      "name": "Barbell Bench Press",
+      "reps": "6",
+      "weight": "155",
+      "workoutLogId": 5,
       "userId": 2,
       "id": 11
     },
     {
-      "name": "Barbell Curls",
-      "reps": "10",
-      "weight": "45",
-      "workoutLogId": 6,
+      "name": "Barbell Bench Press",
+      "reps": "6",
+      "weight": "155",
+      "workoutLogId": 5,
       "userId": 2,
       "id": 12
     },
     {
-      "name": "",
-      "reps": "",
-      "weight": "",
-      "workoutLogId": "",
+      "name": "Cable Crossovers",
+      "reps": "10",
+      "weight": "30",
+      "workoutLogId": 5,
       "userId": 2,
       "id": 13
+    },
+    {
+      "name": "Cable Crossovers",
+      "reps": "10",
+      "weight": "30",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 14
+    },
+    {
+      "name": "Barbell Bench Press",
+      "reps": "4",
+      "weight": "175",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "name": "Barbell Bench Press",
+      "reps": "4",
+      "weight": "175",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 16
     }
   ],
   "muscleExercises": [

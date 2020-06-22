@@ -56,7 +56,7 @@ export default function WorkoutLogList(props) {
           </thead>
           {searchResults.results.reverse().map(set => {
             return (
-              <tr>
+              <tr key={set.id}>
                 <td>{dateFormatter(set.workoutLog.date)}</td>
                 <td>{set.name}</td>
                 <td>{set.reps}</td>
