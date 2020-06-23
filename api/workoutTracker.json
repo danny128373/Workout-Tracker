@@ -205,15 +205,37 @@
       "id": 4
     },
     {
-      "date": "2020-06-29",
+      "date": "2020-06-20",
       "muscles": [
-        "Chest and Triceps"
+        "Shoulders and Triceps"
       ],
       "notes": [
-        "Did supersets with Bench press and cable crossovers."
+        "Right shoulder started hurting."
       ],
       "userId": 2,
       "id": 5
+    },
+    {
+      "date": "2020-06-21",
+      "muscles": [
+        "Legs"
+      ],
+      "notes": [
+        "3 mins rest between sets"
+      ],
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "date": "2020-06-23",
+      "muscles": [
+        "Biceps"
+      ],
+      "notes": [
+        "Sick pump!"
+      ],
+      "userId": 2,
+      "id": 7
     }
   ],
   "users": [
@@ -228,12 +250,12 @@
       "url": ""
     },
     {
-      "name": "Harvey",
+      "name": "Daniel",
       "username": "bb",
       "password": "bb",
       "age": "30",
-      "height": "5'11\"",
-      "weight": "170",
+      "height": "5'10\"",
+      "weight": "160",
       "id": 2,
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
     },
@@ -368,68 +390,76 @@
       "id": 8
     },
     {
-      "name": "Barbell Bench Press",
-      "reps": "8",
-      "weight": "135",
+      "name": "Overhead Press",
+      "reps": "7",
+      "weight": "115",
       "workoutLogId": 5,
       "userId": 2,
       "id": 9
     },
     {
-      "name": "Cable Crossovers",
-      "reps": "10",
-      "weight": "30",
+      "name": "Military Press",
+      "reps": "8",
+      "weight": "115",
       "workoutLogId": 5,
       "userId": 2,
       "id": 10
     },
     {
-      "name": "Barbell Bench Press",
+      "name": "Overhead Press",
       "reps": "6",
-      "weight": "155",
+      "weight": "135",
       "workoutLogId": 5,
       "userId": 2,
       "id": 11
     },
     {
-      "name": "Barbell Bench Press",
+      "name": "Military Press",
       "reps": "6",
-      "weight": "155",
+      "weight": "135",
       "workoutLogId": 5,
       "userId": 2,
       "id": 12
     },
     {
-      "name": "Cable Crossovers",
+      "name": "Squats",
       "reps": "10",
-      "weight": "30",
-      "workoutLogId": 5,
+      "weight": "135",
+      "workoutLogId": 6,
       "userId": 2,
       "id": 13
     },
     {
-      "name": "Cable Crossovers",
-      "reps": "10",
-      "weight": "30",
-      "workoutLogId": 5,
+      "name": "Squats",
+      "reps": "4",
+      "weight": "185",
+      "workoutLogId": 6,
       "userId": 2,
       "id": 14
     },
     {
-      "name": "Barbell Bench Press",
-      "reps": "4",
+      "name": "Squats",
+      "reps": "6",
       "weight": "175",
-      "workoutLogId": 5,
+      "workoutLogId": 6,
       "userId": 2,
       "id": 15
     },
     {
-      "name": "Barbell Bench Press",
-      "reps": "4",
-      "weight": "175",
-      "workoutLogId": 5,
+      "name": "Alternating Bicep Curls",
+      "reps": "10",
+      "weight": "30",
+      "workoutLogId": 7,
       "userId": 2,
       "id": 16
+    },
+    {
+      "name": "Hammer Curls",
+      "reps": "8",
+      "weight": "40",
+      "workoutLogId": 7,
+      "userId": 2,
+      "id": 17
     }
   ],
   "muscleExercises": [

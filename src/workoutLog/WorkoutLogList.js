@@ -48,12 +48,12 @@ export default function WorkoutLogList(props) {
 
       {userInput.input ?
         <Table className="logTable">
-          <thead>
+          <tr>
             <th>Date</th>
             <th>Exercise</th>
             <th>Reps</th>
             <th>Weight</th>
-          </thead>
+          </tr>
           {searchResults.results.reverse().map(set => {
             return (
               <tr key={set.id}>
