@@ -3,6 +3,14 @@ p {
   font-weight: bold;
 }
 
+button {
+  border-radius: 10px;
+  margin: 5px;
+  background: linear-gradient(to left, #37c9ef, #2c92d5, #2c92d5, #2c92d5, #2c92d5);
+  color: white;
+  font-size: medium;
+}
+
 /* Home/Login/Register */
 
 .banner {

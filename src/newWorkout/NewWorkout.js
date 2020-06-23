@@ -134,10 +134,10 @@ export default function NewWorkout(props) {
         : null}
       {isShown ?
         <>
-          <Link to="/routine1"><Button>Chest and Triceps</Button></Link>
-          <Button>Back, Biceps, and Forearms</Button>
+          <Link to="/routine1"><Button>Create Workout Plan</Button></Link>
+          {/* <Button>Back, Biceps, and Forearms</Button>
           <Button>Shoulders and Legs</Button>
-          <Button>Abs</Button>
+          <Button>Abs</Button> */}
         </>
         : null}
     </>
