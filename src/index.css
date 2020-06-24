@@ -395,7 +395,7 @@ td.exerciseNameTdRoutine {
 
 /* Start Routine */
 
-.startRoutine {
+/* .startRoutine {
   text-align: center;
   margin-bottom: 117px;
 }
@@ -410,6 +410,10 @@ td.exerciseNameTdRoutine {
 .startRoutine input {
   max-width: 20%;
   margin: 0 8px;
+} */
+
+#gettingReadyContainer {
+  margin-bottom: 100px;
 }
 
 /* ExerciseDetails */

@@ -71,7 +71,7 @@ export default function NewWorkout(props) {
       {isShown ?
         <div className="buttonContainer">
           <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
-          {routines.map(routine => <Button>{routine.name}</Button>)}
+          {routines.map(routine => <Link to="/gettingReady"><Button>Start {routine.name} Workout</Button></Link>)}
         </div>
         : null}
       {!isShown ?

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import { Button, Table } from 'reactstrap'
 import ApiManager from '../modules/ApiManager'
 
 export default function StartWorkout(props) {
@@ -152,11 +153,31 @@ export default function StartWorkout(props) {
   //   </>
   // )
 
+  const [routineExercises, setRoutineExercises] = useState([])
 
+  const getRoutineExercises = () => {
+    ApiManager.getAllRoutinesWithUser('routineExercises', JSON.parse(sessionStorage.getItem('credentials'))[0].id).then(routineExercises => {
+      setRoutineExercises(routineExercises)
+    })
+  }
+
+  useEffect(getRoutineExercises, [])
 
   return (
-    <>
-
-    </>
+    <div id="gettingReadyContainer">
+      {routineExercises.map(exercise => {
+        return (
+          <Table className="exerciseListSelectorForRoutines">
+            <tbody>
+              <tr>
+                <td><img src={exercise.exercise.url} /></td>
+                <td className="exerciseNameTdRoutine">{exercise.exercise.name}</td>
+              </tr>
+            </tbody>
+          </Table>
+        )
+      })}
+      <Link to="/startWorkout"><Button id="gettingReadyButton">Start Workout</Button></Link>
+    </div>
   )
 }

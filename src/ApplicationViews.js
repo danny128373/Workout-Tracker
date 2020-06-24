@@ -20,7 +20,7 @@ import Register from './auth/Register'
 import Home from './home/Home'
 import ExerciseForm from './muscle/ExerciseForm'
 import Routine1 from './routine/Routine1'
-import StartWorkout from './routine/StartWorkout'
+import StartWorkout from './routine/GettingReady'
 import AbsDetails from './muscle/abs/AbsDetails'
 import ChestDetails from './muscle/chest/ChestDetails'
 import ForearmsDetails from './muscle/forearms/ForearmsDetails'
@@ -96,7 +96,7 @@ export default function ApplicationViews(props) {
       <Route exact path="/routine1" render={(props) => {
         return <Routine1 {...props} />
       }} />
-      <Route exact path="/startRoutine1" render={(props) => {
+      <Route exact path="/gettingReady" render={(props) => {
         return <StartWorkout {...props} />
       }} />
       <Route path="/abs/:exerciseId(\d+)" render={props => {
@@ -114,8 +114,8 @@ export default function ApplicationViews(props) {
       <Route path="/back/:exerciseId(\d+)" render={props => {
         return <BackDetails exerciseId={parseInt(props.match.params.exerciseId)} {...props} />
       }} />
-      <Route path="/users/:userId(\d+)/edit" render={props => {
-        return <ProfileEditForm {...props} />
+      <Route path="/routineList" render={props => {
+        return <RoutineList {...props} />
       }} />
     </>
   )
