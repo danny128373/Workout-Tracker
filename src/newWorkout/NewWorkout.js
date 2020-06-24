@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ApiManager from '../modules/ApiManager'
 import { Button } from 'reactstrap'
@@ -11,6 +11,20 @@ export default function NewWorkout(props) {
   const blankSet = { name: "", reps: "", weight: "", workoutLogId: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id }
   const [session, setSession] = useState({ date: "", muscles: "", notes: "", userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id })
   const [set, setSet] = useState([{ ...blankSet }])
+  const [routineExercises, setRoutineExercises] = useState([])
+  const [routines, setRoutines] = useState([])
+
+  const getRoutineExercises = () => {
+    ApiManager.getAllRoutinesWithUser('routineExercises', JSON.parse(sessionStorage.getItem('credentials'))[0].id).then(routines => {
+      setRoutineExercises(routines)
+    })
+  }
+
+  const getRoutines = () => {
+    ApiManager.getAllRoutines('routines', JSON.parse(sessionStorage.getItem('credentials'))[0].id).then(routines => {
+      setRoutines(routines)
+    })
+  }
 
   const handleSessionChange = (event) => {
     setSession({ ...session, [event.target.name]: [event.target.value], })
@@ -49,12 +63,15 @@ export default function NewWorkout(props) {
     setIsShown(false)
   }
 
+  useEffect(getRoutineExercises, [])
+  useEffect(getRoutines, [])
 
   return (
     <>
       {isShown ?
         <div className="buttonContainer">
           <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
+          {routines.map(routine => <Button>{routine.name}</Button>)}
         </div>
         : null}
       {!isShown ?
@@ -135,9 +152,6 @@ export default function NewWorkout(props) {
       {isShown ?
         <>
           <Link to="/routine1"><Button>Create Workout Plan</Button></Link>
-          {/* <Button>Back, Biceps, and Forearms</Button>
-          <Button>Shoulders and Legs</Button>
-          <Button>Abs</Button> */}
         </>
         : null}
     </>

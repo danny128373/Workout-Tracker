@@ -22,13 +22,13 @@ export default {
   getAll(collection) {
     return fetch(`${remoteURL}/${collection}`).then(data => data.json())
   },
-  update(editedWorkout, collection) {
-    return fetch(`${remoteURL}/${collection}/${editedWorkout.id}`, {
+  update(editedProfile, collection) {
+    return fetch(`${remoteURL}/${collection}/${editedProfile.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(editedWorkout)
+      body: JSON.stringify(editedProfile)
     }).then(data => data.json());
   },
   getAllWorkoutLogsWithUser(id, collection) {
@@ -45,5 +45,11 @@ export default {
   },
   getRoutineExercises(routineId) {
     return fetch(`${remoteURL}/routineExercises?_expand=muscle&_expand=exercise&routineId=${routineId}`).then(data => data.json())
+  },
+  getAllRoutinesWithUser(collection, userId) {
+    return fetch(`${remoteURL}/${collection}?_expand=user&_expand=routine&_expand=exercise&userId=${userId}`).then(data => data.json())
+  },
+  getAllRoutines(collection, userId) {
+    return fetch(`${remoteURL}/${collection}?userId=${userId}`).then(data => data.json())
   }
 }
