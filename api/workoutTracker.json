@@ -621,64 +621,29 @@
   ],
   "routines": [
     {
-      "id": 1,
-      "name": "Chest and Triceps"
-    },
-    {
-      "id": 2,
-      "name": "Back, Biceps, and Forearms"
-    },
-    {
-      "id": 2,
-      "name": "Shoulders and Legs"
-    },
-    {
-      "id": 4,
-      "name": "Abs"
+      "name": "Chest",
+      "userId": 2,
+      "id": 1
     }
   ],
   "routineExercises": [
     {
-      "id": 1,
+      "routineId": 1,
+      "userId": 2,
       "exerciseId": 1,
-      "muscleId": 6,
-      "routineId": 1
-    },
-    {
-      "id": 2,
-      "exerciseId": 2,
-      "muscleId": 6,
-      "routineId": 1
-    },
-    {
-      "id": 3,
-      "exerciseId": 27,
-      "muscleId": 6,
-      "routineId": 1
-    },
-    {
-      "id": 4,
-      "exerciseId": 19,
-      "muscleId": 10,
-      "routineId": 1
-    },
-    {
-      "id": 5,
-      "exerciseId": 20,
-      "muscleId": 10,
-      "routineId": 1
-    },
-    {
-      "id": 6,
-      "exerciseId": 29,
-      "muscleId": 10,
-      "routineId": 1
+      "id": 1
     },
     {
       "routineId": 1,
-      "muscleId": 10,
-      "exerciseId": 30,
-      "id": 7
+      "userId": 2,
+      "exerciseId": 2,
+      "id": 2
+    },
+    {
+      "routineId": 1,
+      "userId": 2,
+      "exerciseId": 27,
+      "id": 3
     }
   ]
 }
