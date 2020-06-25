@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MuscleCard(props) {
   return (
@@ -12,6 +13,7 @@ export default function MuscleCard(props) {
           {/* <Link to={`/abs/${props.ab.id}`}>
             <button>Details</button>
           </Link> */}
+          <Link><button>Details</button></Link>
         </div>
       </div>
     </>

@@ -187,6 +187,26 @@ label {
   text-align-last: center;
 }
 
+.exerciseListView {}
+
+.card-content h5 {
+  width: 50%;
+}
+
+#addNewExercise {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputExerciseForm#name {
+  margin-left: 0px;
+  width: 62%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 body {
   color: #2c98d8;
 }

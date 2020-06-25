@@ -71,7 +71,7 @@ export default function NewWorkout(props) {
       {isShown ?
         <div className="buttonContainer">
           <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
-          {routines.map(routine => <Link to="/gettingReady"><Button>Start {routine.name} Workout</Button></Link>)}
+          {/* {routines.map(routine => <Link to="/gettingReady"><Button>Start {routine.name} Workout</Button></Link>)} */}
         </div>
         : null}
       {!isShown ?
@@ -149,11 +149,11 @@ export default function NewWorkout(props) {
           <Button id="workoutButton" onClick={onSubmitHandler} >Submit Workout Log</Button>
         </form>
         : null}
-      {isShown ?
+      {/* {isShown ?
         <>
           <Link to="/routine1"><Button>Create Workout Plan</Button></Link>
         </>
-        : null}
+        : null} */}
     </>
   )
 }

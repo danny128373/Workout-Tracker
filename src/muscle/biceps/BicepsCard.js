@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BicepsCard(props) {
   return (
@@ -9,9 +10,9 @@ export default function BicepsCard(props) {
           <h5><span>
             {props.exercise.exercise.name}
           </span></h5>
-          {/* <Link to={`/abs/${props.ab.id}`}>
+          <Link>
             <button>Details</button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </>
