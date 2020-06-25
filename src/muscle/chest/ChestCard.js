@@ -7,9 +7,9 @@ export default function ChestCard(props) {
       <div className="card">
         <div className="card-content">
           <img className="exerciseImages" alt="chest exercise" src={props.exercise.exercise.url} />
-          <h3> <span>
+          <h5> <span>
             {props.exercise.exercise.name}
-          </span></h3>
+          </span></h5>
           <Link to={`chest/${props.exercise.exercise.id}`}>
             <button>Details</button>
           </Link>

@@ -160,8 +160,8 @@
       "id": 30
     },
     {
-      "name": "Cable crossovers",
-      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419799/6_1_m9hl0v.png",
+      "name": "Wide-grip Pull-ups",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419807/7_1_ufkqpo.png",
       "id": 31
     }
   ],
@@ -236,6 +236,28 @@
       ],
       "userId": 2,
       "id": 7
+    },
+    {
+      "date": "2020-06-24",
+      "muscles": [
+        "Back"
+      ],
+      "notes": [
+        "Morning workout, didn't eat breakfast."
+      ],
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "date": "2020-06-25",
+      "muscles": [
+        "Shoulders and Triceps"
+      ],
+      "notes": [
+        "Heaviest I've gone on overhead press, sick!"
+      ],
+      "userId": 2,
+      "id": 9
     }
   ],
   "users": [
@@ -250,12 +272,12 @@
       "url": ""
     },
     {
-      "name": "Daniel",
+      "name": "Harvey",
       "username": "bb",
       "password": "bb",
       "age": "30",
-      "height": "5'10\"",
-      "weight": "160",
+      "height": "5'11\"",
+      "weight": "155",
       "id": 2,
       "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
     },
@@ -460,6 +482,46 @@
       "workoutLogId": 7,
       "userId": 2,
       "id": 17
+    },
+    {
+      "name": "Bent-Over Barbell Rows",
+      "reps": "7",
+      "weight": "155",
+      "workoutLogId": 8,
+      "userId": 2,
+      "id": 18
+    },
+    {
+      "name": "Deadlifts",
+      "reps": "10",
+      "weight": "135",
+      "workoutLogId": 8,
+      "userId": 2,
+      "id": 19
+    },
+    {
+      "name": "Dumbbell Single-Arm Row",
+      "reps": "10",
+      "weight": "70",
+      "workoutLogId": 8,
+      "userId": 2,
+      "id": 20
+    },
+    {
+      "name": "Overhead Press",
+      "reps": "9",
+      "weight": "115",
+      "workoutLogId": 9,
+      "userId": 2,
+      "id": 21
+    },
+    {
+      "name": "Overhead Press",
+      "reps": "5",
+      "weight": "155",
+      "workoutLogId": 9,
+      "userId": 2,
+      "id": 23
     }
   ],
   "muscleExercises": [
@@ -615,7 +677,7 @@
     },
     {
       "exerciseId": 31,
-      "muscleId": 6,
+      "muscleId": 2,
       "id": 31
     }
   ],

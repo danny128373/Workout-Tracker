@@ -51,7 +51,7 @@ export default function ExerciseForm(props) {
   const onSubmitHandler = () => {
     ApiManager.post(exercise, 'exercises').then(postedExercise => {
       ApiManager.post({ exerciseId: postedExercise.id, muscleId: muscleId.muscleId }, "muscleExercises").then(exercise => {
-        ApiManager.post({ routineId: routineId.routineId, muscleId: muscleId.muscleId, exerciseId: postedExercise.id }, 'routineExercises')
+        ApiManager.post({ routineId: routineId.routineId, userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id, exerciseId: postedExercise.id }, 'routineExercises')
       })
     })
     props.history.push("/newWorkout")
@@ -64,15 +64,15 @@ export default function ExerciseForm(props) {
     <div id="addNewExercise">
       <h3>Add New Exercise</h3>
       <label htmlFor="exerciseName"></label>
-      <input id="name" onChange={handleFieldChange} name="exerciseName" type="text" />
+      <input id="name" placeholder="Please Enter Exercise Name" className="inputExerciseForm" onChange={handleFieldChange} name="exerciseName" type="text" />
       <select onChange={handleMuscleChange} id="muscleId">
         <option>Please select primary muscle</option>
         {muscles.map(muscle => <option key={muscle.id}>{muscle.name}</option>)}
       </select>
-      <select onChange={handleGroupChange} id="routineId">
+      {/* <select onChange={handleGroupChange} id="routineId">
         <option>Please select muscle group</option>
         {routines.map(routine => <option key={routine.id}>{routine.name}</option>)}
-      </select>
+      </select> */}
       <Button onClick={onSubmitHandler}>Submit</Button>
     </div>
   )
