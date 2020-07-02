@@ -30,12 +30,14 @@ import ProfileEditForm from './profile/ProfileEditForm'
 
 export default function ApplicationViews(props) {
   const clearUser = props.clearUser
+  const logsHandler = props.logsHandler
+  const workoutHandler = props.workoutHandler
 
   return (
     <>
       <div className="workoutContainer">
         <Route exact path="/newWorkout" render={(props) => {
-          return <NewWorkout {...props} />
+          return <NewWorkout {...props} logsHandler={logsHandler} />
         }} />
       </div>
       <Route exact path="/login" render={(props) => {
@@ -78,7 +80,7 @@ export default function ApplicationViews(props) {
         return <UpperLegsList {...props} />
       }} />
       <Route exact path="/profile" render={(props) => {
-        return <Profile {...props} clearUser={clearUser} />
+        return <Profile {...props} clearUser={clearUser} workoutHandler={workoutHandler} />
       }} />
       <Route exact path={`/users/${JSON.parse(sessionStorage.getItem('credentials'))[0].id}/edit`} render={(props) => {
         return <ProfileEditForm {...props} />

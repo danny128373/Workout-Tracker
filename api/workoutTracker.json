@@ -163,6 +163,36 @@
       "name": "Wide-grip Pull-ups",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419807/7_1_ufkqpo.png",
       "id": 31
+    },
+    {
+      "name": "Abdominal Pendulum",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1593138961/3869_p7de7u.jpg",
+      "id": 32
+    },
+    {
+      "name": "Air Bike",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1593139034/229_gh9aqh.jpg",
+      "id": 33
+    },
+    {
+      "name": "Cable Crunch",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1593140058/316_fscg9o.jpg",
+      "id": 34
+    },
+    {
+      "name": "Crunches",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1593140542/308_klmqbt.jpg",
+      "id": 35
+    },
+    {
+      "name": "Plank",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419745/5_1_mv0btc.png",
+      "id": 36
+    },
+    {
+      "name": "Barbell Calf Raises",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419736/4_1_omygmr.png",
+      "id": 37
     }
   ],
   "workoutLogs": [
@@ -170,94 +200,78 @@
       "id": 1,
       "date": "2020-05-17",
       "userId": 1,
-      "notes": "Sick pump!"
-    },
-    {
-      "date": "2020-05-18",
       "muscles": [
-        "Biceps"
+        "Chest and Triceps"
       ],
       "notes": [
-        "Hadn't eaten"
-      ],
-      "id": 2
+        "Sick pump!"
+      ]
     },
     {
-      "date": "2020-05-18",
+      "date": "2020-04-30",
       "muscles": [
         "Shoulders and Triceps"
       ],
       "notes": [
-        "Felt great!"
+        "Felt tired"
+      ],
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "date": "2020-05-14",
+      "muscles": [
+        "Chest and Triceps"
+      ],
+      "notes": [
+        "Skipped breakfast."
       ],
       "userId": 2,
       "id": 3
     },
     {
-      "date": "2020-05-19",
+      "date": "2020-05-31",
       "muscles": [
-        "Back"
+        "Shoulders and Triceps"
       ],
       "notes": [
-        "Back started hurting"
+        "Hadn't worked out in 2 weeks!"
       ],
       "userId": 2,
       "id": 4
     },
     {
-      "date": "2020-06-20",
+      "date": "2020-06-04",
       "muscles": [
-        "Shoulders and Triceps"
+        "Upper Legs"
       ],
       "notes": [
-        "Right shoulder started hurting."
+        "Good workout!"
       ],
       "userId": 2,
       "id": 5
     },
     {
-      "date": "2020-06-21",
+      "date": "2020-06-12",
       "muscles": [
-        "Legs"
+        "Upper Legs"
       ],
       "notes": [
-        "3 mins rest between sets"
+        "Good workout!"
       ],
       "userId": 2,
       "id": 6
     },
     {
-      "date": "2020-06-23",
+      "date": "2020-06-13",
       "muscles": [
         "Biceps"
       ],
       "notes": [
-        "Sick pump!"
+        "Good workout!"
       ],
       "userId": 2,
       "id": 7
-    },
-    {
-      "date": "2020-06-24",
-      "muscles": [
-        "Back"
-      ],
-      "notes": [
-        "Morning workout, didn't eat breakfast."
-      ],
-      "userId": 2,
-      "id": 8
-    },
-    {
-      "date": "2020-06-25",
-      "muscles": [
-        "Shoulders and Triceps"
-      ],
-      "notes": [
-        "Heaviest I've gone on overhead press, sick!"
-      ],
-      "userId": 2,
-      "id": 9
     }
   ],
   "users": [
@@ -276,21 +290,10 @@
       "username": "bb",
       "password": "bb",
       "age": "30",
-      "height": "5'11\"",
-      "weight": "155",
+      "height": "5'10\"",
+      "weight": "165",
       "id": 2,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592682134/userImage/bzz1yzha3udyw5jjmcnj.jpg"
-    },
-    {
-      "name": "Bryan",
-      "username": "bryan",
-      "password": "bryan",
-      "age": "21",
-      "height": "6'5\"",
-      "weight": "215",
-      "gender": "M",
-      "id": 3,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1592853690/userImage/gcwhmcwb04xq9o5qn2yy.jpg"
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1593704251/userImage/prmvpb8gk8f1rkugcp2k.jpg"
     }
   ],
   "muscles": [
@@ -354,174 +357,112 @@
     {
       "id": 1,
       "name": "Bench Press",
-      "reps": 8,
-      "weight": 135,
+      "reps": "8",
+      "weight": "135",
       "workoutLogId": 1
     },
     {
       "id": 2,
       "name": "Incline Bench Press",
-      "reps": 10,
-      "weight": 115,
+      "reps": "10",
+      "weight": "115",
       "workoutLogId": 1
     },
     {
-      "name": "Bicep Curls",
-      "reps": "8",
+      "name": "Overhead Press",
+      "reps": "10",
       "weight": "95",
       "workoutLogId": 2,
+      "userId": 2,
       "id": 3
     },
     {
-      "name": "Dumbbell Curls",
-      "reps": "10",
-      "weight": "35",
+      "name": "Overhead Press",
+      "reps": "8",
+      "weight": "115",
       "workoutLogId": 2,
+      "userId": 2,
       "id": 4
     },
     {
-      "name": "Military Press",
+      "name": "Bench Press",
       "reps": "10",
-      "weight": "95",
+      "weight": "135",
       "workoutLogId": 3,
       "userId": 2,
       "id": 5
     },
     {
-      "name": "Overhead Press",
-      "reps": "6",
-      "weight": "115",
+      "name": "Bench Press",
+      "reps": "8",
+      "weight": "155",
       "workoutLogId": 3,
       "userId": 2,
       "id": 6
     },
     {
-      "name": "Deadlifts",
+      "name": "Overhead Press",
       "reps": "8",
-      "weight": "155",
+      "weight": "105",
       "workoutLogId": 4,
       "userId": 2,
       "id": 7
     },
     {
-      "name": "Deadlifts",
-      "reps": "6",
-      "weight": "185",
+      "name": "Overhead Press",
+      "reps": "7",
+      "weight": "115",
       "workoutLogId": 4,
       "userId": 2,
       "id": 8
     },
     {
-      "name": "Overhead Press",
-      "reps": "7",
-      "weight": "115",
+      "name": "Squats",
+      "reps": "12",
+      "weight": "135",
       "workoutLogId": 5,
       "userId": 2,
       "id": 9
     },
     {
-      "name": "Military Press",
-      "reps": "8",
-      "weight": "115",
+      "name": "Squats",
+      "reps": "6",
+      "weight": "175",
       "workoutLogId": 5,
       "userId": 2,
       "id": 10
     },
     {
-      "name": "Overhead Press",
-      "reps": "6",
-      "weight": "135",
-      "workoutLogId": 5,
+      "name": "Squats",
+      "reps": "4",
+      "weight": "205",
+      "workoutLogId": 6,
       "userId": 2,
       "id": 11
     },
     {
-      "name": "Military Press",
-      "reps": "6",
+      "name": "Squats",
+      "reps": "12",
       "weight": "135",
-      "workoutLogId": 5,
+      "workoutLogId": 6,
       "userId": 2,
       "id": 12
     },
     {
-      "name": "Squats",
+      "name": "Barbell Bicep Curls",
       "reps": "10",
-      "weight": "135",
-      "workoutLogId": 6,
+      "weight": "45",
+      "workoutLogId": 7,
       "userId": 2,
       "id": 13
     },
     {
-      "name": "Squats",
-      "reps": "4",
-      "weight": "185",
-      "workoutLogId": 6,
-      "userId": 2,
-      "id": 14
-    },
-    {
-      "name": "Squats",
-      "reps": "6",
-      "weight": "175",
-      "workoutLogId": 6,
-      "userId": 2,
-      "id": 15
-    },
-    {
-      "name": "Alternating Bicep Curls",
-      "reps": "10",
+      "name": "Dumbbell Bicep Curls",
+      "reps": "12",
       "weight": "30",
       "workoutLogId": 7,
       "userId": 2,
-      "id": 16
-    },
-    {
-      "name": "Hammer Curls",
-      "reps": "8",
-      "weight": "40",
-      "workoutLogId": 7,
-      "userId": 2,
-      "id": 17
-    },
-    {
-      "name": "Bent-Over Barbell Rows",
-      "reps": "7",
-      "weight": "155",
-      "workoutLogId": 8,
-      "userId": 2,
-      "id": 18
-    },
-    {
-      "name": "Deadlifts",
-      "reps": "10",
-      "weight": "135",
-      "workoutLogId": 8,
-      "userId": 2,
-      "id": 19
-    },
-    {
-      "name": "Dumbbell Single-Arm Row",
-      "reps": "10",
-      "weight": "70",
-      "workoutLogId": 8,
-      "userId": 2,
-      "id": 20
-    },
-    {
-      "name": "Overhead Press",
-      "reps": "9",
-      "weight": "115",
-      "workoutLogId": 9,
-      "userId": 2,
-      "id": 21
-    },
-    {
-      "name": "Overhead Press",
-      "reps": "5",
-      "weight": "155",
-      "workoutLogId": 9,
-      "userId": 2,
-      "id": 23
+      "id": 14
     }
   ],
   "muscleExercises": [
@@ -679,6 +620,36 @@
       "exerciseId": 31,
       "muscleId": 2,
       "id": 31
+    },
+    {
+      "exerciseId": 32,
+      "muscleId": 1,
+      "id": 32
+    },
+    {
+      "exerciseId": 33,
+      "muscleId": 1,
+      "id": 33
+    },
+    {
+      "exerciseId": 34,
+      "muscleId": 1,
+      "id": 34
+    },
+    {
+      "exerciseId": 35,
+      "muscleId": 1,
+      "id": 35
+    },
+    {
+      "exerciseId": 36,
+      "muscleId": 1,
+      "id": 36
+    },
+    {
+      "exerciseId": 37,
+      "muscleId": 4,
+      "id": 37
     }
   ],
   "routines": [
@@ -706,6 +677,18 @@
       "userId": 2,
       "exerciseId": 27,
       "id": 3
+    },
+    {
+      "routineId": "",
+      "userId": 2,
+      "exerciseId": 36,
+      "id": 4
+    },
+    {
+      "routineId": "",
+      "userId": 2,
+      "exerciseId": 37,
+      "id": 5
     }
   ]
 }

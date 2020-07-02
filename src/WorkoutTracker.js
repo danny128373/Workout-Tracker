@@ -15,6 +15,67 @@ const WorkoutTracker = (props) => {
   const [hasUser, setHasUser] = useState(isAuthenticated())
   const [register, setRegister] = useState(false)
   const [login, setLogin] = useState(false)
+  const [workoutBackground, setWorkoutBackground] = useState({ background: 'lightskyblue' })
+  const [logsBackground, setLogsBackground] = useState({ background: '' })
+  const [exercisesBackground, setExercisesBackground] = useState({ background: '' })
+  const [profileBackground, setProfileBackground] = useState({ background: '' })
+
+  const workoutHandler = () => {
+    const stateToChange = { ...workoutBackground }
+    const logs = { ...logsBackground }
+    logs.background = 'none'
+    const exercises = { ...exercisesBackground }
+    exercises.background = 'none'
+    const profile = { ...profileBackground }
+    profile.background = 'none'
+    stateToChange.background = 'lightskyblue'
+    setLogsBackground(logs)
+    setWorkoutBackground(stateToChange)
+    setProfileBackground(profile)
+    setExercisesBackground(exercises)
+  }
+  const logsHandler = () => {
+    const stateToChange = { ...logsBackground }
+    const workout = { ...workoutBackground }
+    workout.background = 'none'
+    const exercises = { ...exercisesBackground }
+    exercises.background = 'none'
+    const profile = { ...profileBackground }
+    profile.background = 'none'
+    stateToChange.background = 'lightskyblue'
+    setLogsBackground(stateToChange)
+    setWorkoutBackground(workout)
+    setProfileBackground(profile)
+    setExercisesBackground(exercises)
+  }
+  const exercisesHandler = () => {
+    const stateToChange = { ...exercisesBackground }
+    const workout = { ...workoutBackground }
+    workout.background = 'none'
+    const logs = { ...logsBackground }
+    logs.background = 'none'
+    const profile = { ...profileBackground }
+    profile.background = 'none'
+    stateToChange.background = 'lightskyblue'
+    setLogsBackground(logs)
+    setWorkoutBackground(workout)
+    setProfileBackground(profile)
+    setExercisesBackground(stateToChange)
+  }
+  const profileHandler = () => {
+    const stateToChange = { ...profileBackground }
+    const workout = { ...workoutBackground }
+    workout.background = 'none'
+    const exercises = { ...exercisesBackground }
+    exercises.background = 'none'
+    const logs = { ...logsBackground }
+    logs.background = 'none'
+    stateToChange.background = 'lightskyblue'
+    setLogsBackground(logs)
+    setWorkoutBackground(workout)
+    setProfileBackground(stateToChange)
+    setExercisesBackground(exercises)
+  }
 
   useEffect(() => {
     setHasUser(isAuthenticated());
@@ -62,11 +123,27 @@ const WorkoutTracker = (props) => {
           <div className="fixed-top" id="logoAppContainer">
             <img id="logoApp" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
           </div>
-          <ApplicationViews clearUser={clearUser} {...props} />
+          <ApplicationViews
+            logsHandler={logsHandler}
+            logsBackground={logsBackground}
+            workoutHandler={workoutHandler}
+            workoutBackground={workoutBackground}
+            clearUser={clearUser}
+            {...props} />
         </>
         : null}
       {hasUser
-        ? <NavBar hasUser={hasUser} {...props} clearUser={clearUser} />
+        ? <NavBar
+          logsHandler={logsHandler}
+          workoutHandler={workoutHandler}
+          exercisesHandler={exercisesHandler}
+          profileHandler={profileHandler}
+          workoutBackground={workoutBackground}
+          logsBackground={logsBackground}
+          exercisesBackground={exercisesBackground}
+          profileBackground={profileBackground}
+          hasUser={hasUser} {...props}
+          clearUser={clearUser} />
         : null}
     </>
   )

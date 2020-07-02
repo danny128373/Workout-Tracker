@@ -43,7 +43,9 @@ export default function Profile(props) {
 
   const handleLogout = () => {
     props.clearUser()
+    props.workoutHandler()
     props.history.push('/login')
+
   }
 
   useEffect(getUser, [])
@@ -52,7 +54,7 @@ export default function Profile(props) {
     <div id="profileContainer">
 
       <label className="labelFile" htmlFor="file">
-        Upload New Profile
+        Upload Picture
         <input
           id="file"
           type="file"

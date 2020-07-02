@@ -13,10 +13,17 @@ export default function NewWorkout(props) {
   const [set, setSet] = useState([{ ...blankSet }])
   const [routineExercises, setRoutineExercises] = useState([])
   const [routines, setRoutines] = useState([])
+  const [user, setUser] = useState({ name: "" })
 
   const getRoutineExercises = () => {
     ApiManager.getAllRoutinesWithUser('routineExercises', JSON.parse(sessionStorage.getItem('credentials'))[0].id).then(routines => {
       setRoutineExercises(routines)
+    })
+  }
+
+  const getName = () => {
+    ApiManager.get('users', JSON.parse(sessionStorage.getItem('credentials'))[0].id).then(user => {
+      setUser(user)
     })
   }
 
@@ -55,6 +62,7 @@ export default function NewWorkout(props) {
     set.map(exercise => {
       ApiManager.post(exercise, "sets").then(e => {
         props.history.push("/workoutLogs")
+        props.logsHandler()
       })
     })
   }
@@ -65,12 +73,15 @@ export default function NewWorkout(props) {
 
   useEffect(getRoutineExercises, [])
   useEffect(getRoutines, [])
+  useEffect(getName, [])
 
   return (
     <>
       {isShown ?
         <div className="buttonContainer">
-          <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
+          <h2>Welcome {user.name}! </h2>
+          <img src={user.url} id="newWorkoutPic" />
+          <Button id="newWorkout" onClick={addWorkoutHandler}>Start Workout</Button>
           {/* {routines.map(routine => <Link to="/gettingReady"><Button>Start {routine.name} Workout</Button></Link>)} */}
         </div>
         : null}
