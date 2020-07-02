@@ -52,7 +52,7 @@ export default function Profile(props) {
     <div id="profileContainer">
 
       <label className="labelFile" htmlFor="file">
-        Upload New Profile
+        Upload Picture
         <input
           id="file"
           type="file"
