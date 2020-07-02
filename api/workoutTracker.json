@@ -188,6 +188,11 @@
       "name": "Plank",
       "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419745/5_1_mv0btc.png",
       "id": 36
+    },
+    {
+      "name": "Barbell Calf Raises",
+      "url": "https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592419736/4_1_omygmr.png",
+      "id": 37
     }
   ],
   "workoutLogs": [
@@ -234,6 +239,39 @@
       ],
       "userId": 2,
       "id": 4
+    },
+    {
+      "date": "2020-06-04",
+      "muscles": [
+        "Upper Legs"
+      ],
+      "notes": [
+        "Good workout!"
+      ],
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "date": "2020-06-12",
+      "muscles": [
+        "Upper Legs"
+      ],
+      "notes": [
+        "Good workout!"
+      ],
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "date": "2020-06-13",
+      "muscles": [
+        "Biceps"
+      ],
+      "notes": [
+        "Good workout!"
+      ],
+      "userId": 2,
+      "id": 7
     }
   ],
   "users": [
@@ -252,10 +290,10 @@
       "username": "bb",
       "password": "bb",
       "age": "30",
-      "height": "5'11\"",
+      "height": "5'10\"",
       "weight": "165",
       "id": 2,
-      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1593661640/userImage/fan29clonui4hbbswknp.jpg"
+      "url": "http://res.cloudinary.com/dp5l2gxzh/image/upload/v1593704251/userImage/prmvpb8gk8f1rkugcp2k.jpg"
     }
   ],
   "muscles": [
@@ -365,18 +403,66 @@
     {
       "name": "Overhead Press",
       "reps": "8",
-      "weight": "115",
+      "weight": "105",
       "workoutLogId": 4,
       "userId": 2,
       "id": 7
     },
     {
       "name": "Overhead Press",
-      "reps": "10",
-      "weight": "105",
+      "reps": "7",
+      "weight": "115",
       "workoutLogId": 4,
       "userId": 2,
       "id": 8
+    },
+    {
+      "name": "Squats",
+      "reps": "12",
+      "weight": "135",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "name": "Squats",
+      "reps": "6",
+      "weight": "175",
+      "workoutLogId": 5,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "name": "Squats",
+      "reps": "4",
+      "weight": "205",
+      "workoutLogId": 6,
+      "userId": 2,
+      "id": 11
+    },
+    {
+      "name": "Squats",
+      "reps": "12",
+      "weight": "135",
+      "workoutLogId": 6,
+      "userId": 2,
+      "id": 12
+    },
+    {
+      "name": "Barbell Bicep Curls",
+      "reps": "10",
+      "weight": "45",
+      "workoutLogId": 7,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "name": "Dumbbell Bicep Curls",
+      "reps": "12",
+      "weight": "30",
+      "workoutLogId": 7,
+      "userId": 2,
+      "id": 14
     }
   ],
   "muscleExercises": [
@@ -559,6 +645,11 @@
       "exerciseId": 36,
       "muscleId": 1,
       "id": 36
+    },
+    {
+      "exerciseId": 37,
+      "muscleId": 4,
+      "id": 37
     }
   ],
   "routines": [
@@ -592,6 +683,12 @@
       "userId": 2,
       "exerciseId": 36,
       "id": 4
+    },
+    {
+      "routineId": "",
+      "userId": 2,
+      "exerciseId": 37,
+      "id": 5
     }
   ]
 }

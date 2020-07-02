@@ -123,7 +123,13 @@ const WorkoutTracker = (props) => {
           <div className="fixed-top" id="logoAppContainer">
             <img id="logoApp" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" />
           </div>
-          <ApplicationViews clearUser={clearUser} {...props} />
+          <ApplicationViews
+            logsHandler={logsHandler}
+            logsBackground={logsBackground}
+            workoutHandler={workoutHandler}
+            workoutBackground={workoutBackground}
+            clearUser={clearUser}
+            {...props} />
         </>
         : null}
       {hasUser

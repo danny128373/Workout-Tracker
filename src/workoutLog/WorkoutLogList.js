@@ -36,6 +36,26 @@ export default function WorkoutLogList(props) {
   useEffect(getWorkoutLogs, [])
   useEffect(getExercises, [userInput])
 
+  const compare = (a, b) => {
+    let comparison = 0;
+    if (parseInt(a.weight) > parseInt(b.weight)) {
+      comparison = 1;
+    } else {
+      comparison = -1
+    }
+    return comparison;
+  }
+
+  // const dateCompare = (a, b) => {
+  //   let comparison = 0;
+  //   if (parseInt(a.date) < parseInt(b.date)) {
+  //     comparison = 1;
+  //   } else {
+  //     comparison = -1
+  //   }
+  //   return comparison;
+  // }
+
   return (
     <>
 
@@ -67,7 +87,9 @@ export default function WorkoutLogList(props) {
         </Table>
         : null}
       {!userInput.input ?
-        workouts.reverse().map(workout => {
+        workouts.sort(function (a, b) {
+          return new Date(b.date) - new Date(a.date);
+        }).map(workout => {
           return (
             <Table className="logTable" key={workout.id}>
               <thead>
@@ -83,7 +105,7 @@ export default function WorkoutLogList(props) {
                 </tr>
               </thead>
               <tbody>
-                {workout.sets.map((set, index) => {
+                {workout.sets.sort(compare).map((set, index) => {
                   return (
                     <tr key={set.id} >
                       <td >

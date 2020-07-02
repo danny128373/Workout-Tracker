@@ -4,8 +4,6 @@ import { withRouter } from 'react-router-dom'
 
 const NavBar = (props) => {
 
-
-
   return (
     <>
       <ul className="navbar fixed-bottom">

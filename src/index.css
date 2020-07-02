@@ -153,7 +153,8 @@ label {
 }
 
 .navLink {
-  width: 93%;
+  width: 98%;
+  padding: 3px;
 }
 
 #logoApp {
@@ -236,6 +237,12 @@ td {
 
 /* Workout */
 
+#newWorkoutPic {
+  max-width: 57%;
+  border-radius: 24px;
+  margin-top: 10px;
+}
+
 .workoutContainer {
   margin-top: 170px;
 }
@@ -249,7 +256,7 @@ td {
 }
 
 #newWorkout {
-  margin-top: 55px;
+  margin-top: 33px;
   font-size: x-large;
   background-image: linear-gradient(to left, #2c92d5, #156cdd, #156cdd, #156cdd, #156cdd);
 }
@@ -267,7 +274,7 @@ form#containerNewWorkout .set {
 #setButton, #workoutButton {
   background-image: linear-gradient(to left, #2c92d5, #156cdd, #156cdd, #156cdd, #156cdd);
   align-self: center;
-  width: 240px;
+  width: 185px;
 }
 
 #profileContainer {
@@ -349,7 +356,6 @@ input[type="file"] {
 }
 
 .labelFile {
-  border: 1px solid #ccc;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
@@ -357,7 +363,7 @@ input[type="file"] {
   background-image: linear-gradient(to left, #2c92d5, #156cdd, #156cdd, #156cdd, #156cdd);
   color: white;
   border-radius: 7px;
-  box-shadow: 3px 5px #888888;
+  box-shadow: 3px 3px #888888;
 }
 
 #logout {

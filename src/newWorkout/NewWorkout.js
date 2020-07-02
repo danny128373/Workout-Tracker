@@ -62,6 +62,7 @@ export default function NewWorkout(props) {
     set.map(exercise => {
       ApiManager.post(exercise, "sets").then(e => {
         props.history.push("/workoutLogs")
+        props.logsHandler()
       })
     })
   }
@@ -79,7 +80,8 @@ export default function NewWorkout(props) {
       {isShown ?
         <div className="buttonContainer">
           <h2>Welcome {user.name}! </h2>
-          <Button id="newWorkout" onClick={addWorkoutHandler}>Start New Workout</Button>
+          <img src={user.url} id="newWorkoutPic" />
+          <Button id="newWorkout" onClick={addWorkoutHandler}>Start Workout</Button>
           {/* {routines.map(routine => <Link to="/gettingReady"><Button>Start {routine.name} Workout</Button></Link>)} */}
         </div>
         : null}

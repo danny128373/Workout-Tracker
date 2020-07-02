@@ -43,7 +43,9 @@ export default function Profile(props) {
 
   const handleLogout = () => {
     props.clearUser()
+    props.workoutHandler()
     props.history.push('/login')
+
   }
 
   useEffect(getUser, [])
