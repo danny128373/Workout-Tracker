@@ -1,3 +1,5 @@
+<p align="center"><img alt="RepCount" src="https://res.cloudinary.com/dp5l2gxzh/image/upload/v1592505933/App_icon_an9kpl.png" width=300px height="180px" /></p>
+
 # About The Project
 
 RepCount is an app developed for any gym enthusiast to keep track of their workouts and check their progress. This is a mobile friendly version where users can log by muscle(s), exercise name, weight, and reps. Users will have their logs saved and easy to check their progress by exercise name. RepCount also has a profile page where users can upload progress pictures and displays details about the user.
@@ -25,4 +27,4 @@ Instructions to run RepCount locally.
 ## Acknowledgements 
 
 * Joe, Bryan, and Sage
-* Everyone at C40
+* Everyone in Cohort 40
