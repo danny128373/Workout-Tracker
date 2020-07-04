@@ -16,7 +16,7 @@ RepCount is an app developed for any gym enthusiast to keep track of their worko
 
 Instructions to run RepCount locally.
 
-1. Clone Repcount by running the following command in your terminal: git clone git@github.com:danny128373/Workout-Tracker.git
+1. Clone Repcount by running the following command in your terminal: git clone https://github.com/danny128373/Workout-Tracker.git
 
 1. Once cloned, you'll need to install the libraries and dependencies needed. Run the following command in your terminal: npm install
 
