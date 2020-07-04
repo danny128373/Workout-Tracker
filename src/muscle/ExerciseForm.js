@@ -54,7 +54,7 @@ export default function ExerciseForm(props) {
         ApiManager.post({ routineId: routineId.routineId, userId: JSON.parse(sessionStorage.getItem('credentials'))[0].id, exerciseId: postedExercise.id }, 'routineExercises')
       })
     })
-    props.history.push("/exercises")
+    props.history.push("/muscle")
   }
 
   useEffect(getMuscles, [])
